@@ -1,0 +1,115 @@
+name: Publish Promo Menupage Release
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - publish-request.json
+
+permissions:
+  contents: write
+
+concurrency:
+  group: promo-menupage-release
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout release repository
+        uses: actions/checkout@v4
+
+      - name: Read publish request
+        shell: bash
+        run: |
+          set -euo pipefail
+          echo "VERSION=$(jq -r '.version' publish-request.json)" >> "$GITHUB_ENV"
+          echo "BASE_URL=$(jq -r '.baseUrl' publish-request.json)" >> "$GITHUB_ENV"
+          echo "INSTALL_FILE=$(jq -r '.install.filename' publish-request.json)" >> "$GITHUB_ENV"
+          echo "INSTALL_SHA=$(jq -r '.install.sha256' publish-request.json)" >> "$GITHUB_ENV"
+          echo "UPDATE_FILE=$(jq -r '.update.filename' publish-request.json)" >> "$GITHUB_ENV"
+          echo "UPDATE_SHA=$(jq -r '.update.sha256' publish-request.json)" >> "$GITHUB_ENV"
+          echo "CCX_FILE=$(jq -r '.ccx.filename' publish-request.json)" >> "$GITHUB_ENV"
+          echo "CCX_SHA=$(jq -r '.ccx.sha256' publish-request.json)" >> "$GITHUB_ENV"
+
+      - name: Download verified public artifacts
+        shell: bash
+        run: |
+          set -euo pipefail
+          curl --fail --location --retry 6 --retry-delay 3 "$BASE_URL/$INSTALL_FILE" -o "$INSTALL_FILE"
+          curl --fail --location --retry 6 --retry-delay 3 "$BASE_URL/$UPDATE_FILE" -o "$UPDATE_FILE"
+          curl --fail --location --retry 6 --retry-delay 3 "$BASE_URL/$CCX_FILE" -o "$CCX_FILE"
+          printf '%s  %s\n' "$INSTALL_SHA" "$INSTALL_FILE" | sha256sum -c -
+          printf '%s  %s\n' "$UPDATE_SHA" "$UPDATE_FILE" | sha256sum -c -
+          printf '%s  %s\n' "$CCX_SHA" "$CCX_FILE" | sha256sum -c -
+
+      - name: Create or refresh GitHub Release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          TAG="v$VERSION"
+          if ! gh release view "$TAG" >/dev/null 2>&1; then
+            gh release create "$TAG" --title "Promo Menupage Automation $VERSION" --notes "Verified stable release $VERSION" --target "$GITHUB_SHA"
+          fi
+          gh release upload "$TAG" "$INSTALL_FILE" "$UPDATE_FILE" "$CCX_FILE" --clobber
+
+      - name: Generate stable manifest
+        shell: bash
+        run: |
+          python - <<'PY'
+          import json, os
+          from pathlib import Path
+
+          req = json.loads(Path("publish-request.json").read_text(encoding="utf-8"))
+          repo = os.environ["GITHUB_REPOSITORY"]
+          version = req["version"]
+          tag = f"v{version}"
+          base = f"https://github.com/{repo}/releases/download/{tag}"
+
+          def pack(name):
+              item = req[name]
+              return {
+                  "filename": item["filename"],
+                  "sha256": item["sha256"],
+                  "size": int(item["size"]),
+                  "url": f"{base}/{item['filename']}",
+              }
+
+          manifest = {
+              "schemaVersion": 2,
+              "product": "Promo Menupage Automation",
+              "pluginId": "com.amarintv.promo.menupagebuilder",
+              "channel": "stable",
+              "latest": version,
+              "generatedAt": req["generatedAt"],
+              "releases": [{
+                  "version": version,
+                  "channel": "stable",
+                  "mandatory": False,
+                  "minPremiere": req.get("minPremiere", "25.6.0"),
+                  "maxPremiere": req.get("maxPremiere", "26.99.99"),
+                  "summary": req.get("summary", "Promo Menupage Automation verified stable release"),
+                  "notes": req.get("notes", []),
+                  "installPackage": pack("install"),
+                  "updatePackage": pack("update"),
+                  "ccx": pack("ccx"),
+                  "installPage": f"https://github.com/{repo}/releases/latest",
+              }],
+          }
+          Path("stable.json").write_text(json.dumps(manifest, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+          PY
+
+      - name: Publish stable manifest
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "Promo Menupage Release Bot"
+          git config user.email "release-bot@users.noreply.github.com"
+          git add stable.json
+          if ! git diff --cached --quiet; then
+            git commit -m "Publish stable $VERSION"
+            git push origin main
+          fi
