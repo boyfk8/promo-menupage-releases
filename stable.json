@@ -1,0 +1,47 @@
+{
+  "schemaVersion": 2,
+  "product": "Promo Menupage Automation",
+  "pluginId": "com.amarintv.promo.menupagebuilder",
+  "channel": "stable",
+  "latest": "0.5.42",
+  "generatedAt": "2026-10-06T16:17:30Z",
+  "releases": [
+    {
+      "version": "0.5.42",
+      "channel": "stable",
+      "mandatory": false,
+      "minPremiere": "25.6.0",
+      "maxPremiere": "26.99.99",
+      "summary": "Promo Menupage Automation verified stable release",
+      "notes": [
+        "GitHub-hosted free install/update channel",
+        "Web App update availability/status button",
+        "Verified Update ZIP download and staging",
+        "SHA256 + package identity + every payload hash verification before staging",
+        "Safe detached apply through existing offline_apply backup/rollback/Adobe UPIA flow",
+        "Update apply blocks while Premiere or generation is active",
+        "Render output base may use EXPORT_MENUPAGE safely with date-run mode",
+        "Blank-Code numbered Pages remain visible and renderable"
+      ],
+      "installPackage": {
+        "filename": "PromoMenupageAutomation_CloudInstall_0.5.42.zip",
+        "sha256": "FD1DB19DAEADDAB1B7FF9BDD95B26DC0419F8F2B5B917567AF5959C80940EF60",
+        "size": 231502816,
+        "url": "https://github.com/boyfk8/promo-menupage-releases/releases/download/v0.5.42/PromoMenupageAutomation_CloudInstall_0.5.42.zip"
+      },
+      "updatePackage": {
+        "filename": "PromoMenupageAutomation_Update_0.5.42.zip",
+        "sha256": "5361E828952209039D7CC6E307D7B14A71809000AF1E681334FC51249BE0DCF4",
+        "size": 204841447,
+        "url": "https://github.com/boyfk8/promo-menupage-releases/releases/download/v0.5.42/PromoMenupageAutomation_Update_0.5.42.zip"
+      },
+      "ccx": {
+        "filename": "com.amarintv.promo.menupagebuilder_0.5.42.ccx",
+        "sha256": "C898BBFA12FE02E4BD0C7499D85DB5D1D8BDD3AD0578AE2D722C941DD2782D74",
+        "size": 90679,
+        "url": "https://github.com/boyfk8/promo-menupage-releases/releases/download/v0.5.42/com.amarintv.promo.menupagebuilder_0.5.42.ccx"
+      },
+      "installPage": "https://github.com/boyfk8/promo-menupage-releases/releases/latest"
+    }
+  ]
+}
