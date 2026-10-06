@@ -1,33 +1,33 @@
 {
-  "version": "0.5.43",
-  "baseUrl": "https://committee-gold-herself-able.trycloudflare.com",
-  "generatedAt": "2026-10-06T17:34:44Z",
+  "version": "0.5.44",
+  "baseUrl": "https://glucose-cologne-during-want.trycloudflare.com",
+  "generatedAt": "2026-10-06T18:38:42Z",
   "minPremiere": "25.6.0",
   "maxPremiere": "26.99.99",
-  "summary": "Promo Menupage Automation 0.5.43 verified stable release",
+  "summary": "Promo Menupage Automation 0.5.44 verified stable release",
   "notes": [
-    "Persistent Preview/Page Editor Undo and Redo across focus changes",
-    "Export path promoted and separated from Source",
-    "Compact Word import bar",
-    "Startup loading animation",
-    "Word import, Save, Sync, Generate and QC action busy feedback",
-    "Dedicated Generate/Render progress with done/total and percentage",
-    "Top-bar GitHub update control visible even when already current",
-    "Update checking/downloading/installing activity animation"
+    "Fast Web startup via cached font and glyph metrics with identical schedule semantics",
+    "Saved Word schedule becomes visible before non-critical Premiere and asset refresh",
+    "Render History is isolated so MXF inspection cannot block main Web startup",
+    "Schedule response releases the global lock before multi-megabyte response I/O",
+    "Updater verifies the actual Adobe-installed UXP Plugin version through Adobe UPIA",
+    "Same-version repair automatically fixes an old or missing Plugin when the App is current",
+    "Update completes only when App, Backend and Adobe-installed UXP Plugin versions match",
+    "Operators never install CCX manually; save work and close Premiere only when prompted"
   ],
   "install": {
-    "filename": "PromoMenupageAutomation_CloudInstall_0.5.43.zip",
-    "sha256": "606772233544467059B3705E2BE35FF26A9B950658589EFA98036C1CC118A65C",
-    "size": 231507095
+    "filename": "PromoMenupageAutomation_CloudInstall_0.5.44.zip",
+    "sha256": "52BC08A32503B1B486B92A21D2FACDB6543A1753BDAB88FA005BF17FB373608B",
+    "size": 231509779
   },
   "update": {
-    "filename": "PromoMenupageAutomation_Update_0.5.43.zip",
-    "sha256": "D6929FA40C7AE00AA4BA7C1FAF9B3A1A2BFF9B161BAAF7DE3EBDA13A93D94AC8",
-    "size": 204845731
+    "filename": "PromoMenupageAutomation_Update_0.5.44.zip",
+    "sha256": "56C47FEAEDDBA83EE205FC63B11ED88AB9416D3738E3B3CA180DF0CE254147DC",
+    "size": 204849183
   },
   "ccx": {
-    "filename": "com.amarintv.promo.menupagebuilder_0.5.43.ccx",
-    "sha256": "07AFA6CD13D9A48F23475AB3CE017265DDCB5361B52C3CEE5CBDC76D3F53DE6D",
+    "filename": "com.amarintv.promo.menupagebuilder_0.5.44.ccx",
+    "sha256": "C8178EC52CE9ED0BFE68AC2D20BFB498AD93491109FD07D93308A483B937AAC5",
     "size": 90677
   }
 }
