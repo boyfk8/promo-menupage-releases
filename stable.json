@@ -3,41 +3,43 @@
   "product": "Promo Menupage Automation",
   "pluginId": "com.amarintv.promo.menupagebuilder",
   "channel": "stable",
-  "latest": "0.5.48",
-  "generatedAt": "2026-10-07T06:39:15Z",
+  "latest": "0.5.49",
+  "generatedAt": "2026-10-07T08:07:00Z",
   "releases": [
     {
-      "version": "0.5.48",
+      "version": "0.5.49",
       "channel": "stable",
       "mandatory": false,
       "minPremiere": "25.6.0",
       "maxPremiere": "26.99.99",
-      "summary": "Promo Menupage Automation 0.5.48 deterministic text layout and side-by-side workspace",
+      "summary": "Promo Menupage Automation 0.5.49 production workspace UX refinement",
       "notes": [
-        "Pinned Noto Sans Thai faces keep backend metrics, Web Preview and Premiere typography consistent across workstations",
-        "Auto-generated wraps are separated from operator input; legacy computed breaks reflow while explicit manual breaks persist",
-        "PR wrap hints must still satisfy the current right safe boundary; unknown fonts fail to REVIEW instead of using guessed metrics",
-        "Desktop Page List, Preview and Page Editor share one bounded side-by-side workbench",
-        "Includes 0.5.47 missing-media, save-ordering, performance and compact-UI fixes",
+        "Page List and Preview are the primary desktop pair; QC stays with them and Page Editor is below Page List",
+        "Page Editor Slot 1-3 are vertical and Preview stays visible on the right without covering editor controls",
+        "Poster thumbnails are restored to 60 px desktop and 52 px on small screens while keeping Page List free of horizontal scroll",
+        "Code and review details use fixed floating popovers without shifting the page",
+        "QC detail expansion survives periodic status refreshes",
+        "Dashboard metrics are compact beside Word intake on wide screens",
+        "Includes all 0.5.48 deterministic text-layout, missing-media and render-safety fixes",
         "Database migration remains paused"
       ],
       "installPackage": {
-        "filename": "PromoMenupageAutomation_CloudInstall_0.5.48.zip",
-        "sha256": "388181BCB5BE224023D1407F7C3292EAB822185D110058EAF37FAE4FDDD15989",
-        "size": 117254813,
-        "url": "https://github.com/boyfk8/promo-menupage-releases/releases/download/v0.5.48/PromoMenupageAutomation_CloudInstall_0.5.48.zip"
+        "filename": "PromoMenupageAutomation_CloudInstall_0.5.49.zip",
+        "sha256": "78C2AE09AA03AA1555AF79046DBA1B4C866ECA9E3F34455E4B1418B22C820572",
+        "size": 117256880,
+        "url": "https://github.com/boyfk8/promo-menupage-releases/releases/download/v0.5.49/PromoMenupageAutomation_CloudInstall_0.5.49.zip"
       },
       "updatePackage": {
-        "filename": "PromoMenupageAutomation_Update_0.5.48.zip",
-        "sha256": "E2B29B638FA194974F6877620E385D0543371BFD88BFB55D9E76329CE71B4BF8",
-        "size": 90594449,
-        "url": "https://github.com/boyfk8/promo-menupage-releases/releases/download/v0.5.48/PromoMenupageAutomation_Update_0.5.48.zip"
+        "filename": "PromoMenupageAutomation_Update_0.5.49.zip",
+        "sha256": "BE33FA1AA00EF2E6883C26C80FB144F2F1B1E9E49AEF75E9694DDFC96FF86093",
+        "size": 90596513,
+        "url": "https://github.com/boyfk8/promo-menupage-releases/releases/download/v0.5.49/PromoMenupageAutomation_Update_0.5.49.zip"
       },
       "ccx": {
-        "filename": "com.amarintv.promo.menupagebuilder_0.5.48.ccx",
-        "sha256": "599DE7B94D1183A1AA0D7D63ADEFB953E7E1A79198675338021A7BE82F8821EA",
-        "size": 91920,
-        "url": "https://github.com/boyfk8/promo-menupage-releases/releases/download/v0.5.48/com.amarintv.promo.menupagebuilder_0.5.48.ccx"
+        "filename": "com.amarintv.promo.menupagebuilder_0.5.49.ccx",
+        "sha256": "FABA13765803CDB8A32C49B63572D2BE4AB638239FEB467F0C48291D87320D74",
+        "size": 91921,
+        "url": "https://github.com/boyfk8/promo-menupage-releases/releases/download/v0.5.49/com.amarintv.promo.menupagebuilder_0.5.49.ccx"
       },
       "installPage": "https://github.com/boyfk8/promo-menupage-releases/releases/latest"
     }
