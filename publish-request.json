@@ -1,32 +1,33 @@
 {
-  "version": "0.5.45",
+  "version": "0.5.46",
   "baseUrl": "https://biodiversity-ceo-membrane-scotia.trycloudflare.com",
-  "generatedAt": "2026-10-07T04:39:00Z",
+  "generatedAt": "2026-10-07T05:07:00Z",
   "minPremiere": "25.6.0",
   "maxPremiere": "26.99.99",
-  "summary": "Fix Premiere Locate Media blocking render after obsolete posters were removed",
+  "summary": "Fix obsolete missing posters, keep render state responsive, and simplify Queue / Preview",
   "notes": [
-    "Generation opens a verified local Golden copy through UXP without Locate Media for obsolete media.",
-    "Only offline media used by the selected page blocks export with REVIEW and its path.",
-    "Selected poster deletion after an asset scan blocks preflight.",
-    "Recovery opens local projects with the same options.",
-    "Premiere 26.0.2 positive live render: WED12 15-second AVC-Intra 1080 50i MXF, Technical QC passed.",
-    "Negative live test: missing active poster stopped before export; zero MXFs.",
-    "228 regression tests passed; public payload hashes verified. Database migration remains deferred."
+    "Includes the 0.5.45 fix: obsolete missing posters do not trigger Locate Media; missing active media still stops export with REVIEW.",
+    "Generate and approval wait for Text/Style saves and Page selection; failed saves and stale window revisions block unreviewed rendering.",
+    "Patch/QC run outside the main state lock with single-worker ownership checks. Atomic JSON writes preserve last-good state.",
+    "Revision-aware schedule cache and gzip; bounded preview workers publish complete files atomically and clean only regenerable caches.",
+    "Desktop Queue and Preview sit together; output and Style settings open on demand; Audio and mobile-header overflow fixed.",
+    "Update package reduced from 205 MB to 90 MB while retaining FFmpeg/FFprobe executables, licenses and provenance.",
+    "236 regression tests passed. Live Premiere 26.0.2 / UXP 0.5.46 rendered WED12 MXF with Technical QC and local publish passed.",
+    "Human audible/on-air acceptance and Premiere 25 / team workstations have not been revalidated. Database migration remains paused."
   ],
   "install": {
-    "filename": "PromoMenupageAutomation_CloudInstall_0.5.45.zip",
-    "sha256": "15B2A18DCCF5C875DF7A21689EEAEFF6B43402BC4E4A6F15DC24A96F96C197F2",
-    "size": 231512657
+    "filename": "PromoMenupageAutomation_CloudInstall_0.5.46.zip",
+    "sha256": "CDFD8AB827ADAB9345F1EF82468C979D76C734F0B505E03CE263DC390ACEF54E",
+    "size": 116996791
   },
   "update": {
-    "filename": "PromoMenupageAutomation_Update_0.5.45.zip",
-    "sha256": "C0ADFD9BCD45057E3DCAA0719F18FEC88013BA30B4C4A4598456FB69E5079904",
-    "size": 204852058
+    "filename": "PromoMenupageAutomation_Update_0.5.46.zip",
+    "sha256": "6CA92D4B4395C87CCAD446A7365CDDE80A15B2EE9E481B2B41C1316CD2612E2D",
+    "size": 90336176
   },
   "ccx": {
-    "filename": "com.amarintv.promo.menupagebuilder_0.5.45.ccx",
-    "sha256": "6B03B279ABB51941AA77268E8DAABA612395AC2E54B2BA21166BF7D61D92D8D8",
+    "filename": "com.amarintv.promo.menupagebuilder_0.5.46.ccx",
+    "sha256": "0D44AB57037D9B780916DD587367D8EB76A245C5DCAB08BF4A9DACD9249331B2",
     "size": 91920
   }
 }
