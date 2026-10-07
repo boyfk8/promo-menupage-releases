@@ -3,11 +3,11 @@
   "product": "Promo Menupage Automation",
   "pluginId": "com.amarintv.promo.menupagebuilder",
   "channel": "stable",
-  "latest": "0.5.46",
-  "generatedAt": "2026-10-07T05:07:00Z",
+  "latest": "0.5.47",
+  "generatedAt": "2026-10-07T05:10:00Z",
   "releases": [
     {
-      "version": "0.5.46",
+      "version": "0.5.47",
       "channel": "stable",
       "mandatory": false,
       "minPremiere": "25.6.0",
@@ -16,30 +16,31 @@
       "notes": [
         "Includes the 0.5.45 fix: obsolete missing posters do not trigger Locate Media; missing active media still stops export with REVIEW.",
         "Generate and approval wait for Text/Style saves and Page selection; failed saves and stale window revisions block unreviewed rendering.",
+        "Persisted response revisions and own queue/audio revision chains avoid false other-window REVIEW; edits during final refresh block generation until saved.",
         "Patch/QC run outside the main state lock with single-worker ownership checks. Atomic JSON writes preserve last-good state.",
         "Revision-aware schedule cache and gzip; bounded preview workers publish complete files atomically and clean only regenerable caches.",
         "Desktop Queue and Preview sit together; output and Style settings open on demand; Audio and mobile-header overflow fixed.",
         "Update package reduced from 205 MB to 90 MB while retaining FFmpeg/FFprobe executables, licenses and provenance.",
-        "236 regression tests passed. Live Premiere 26.0.2 / UXP 0.5.46 rendered WED12 MXF with Technical QC and local publish passed.",
+        "237 regression tests passed. Live Premiere 26.0.2 / UXP 0.5.47 rendered WED12 MXF with Technical QC and local publish passed.",
         "Human audible/on-air acceptance and Premiere 25 / team workstations have not been revalidated. Database migration remains paused."
       ],
       "installPackage": {
-        "filename": "PromoMenupageAutomation_CloudInstall_0.5.46.zip",
-        "sha256": "CDFD8AB827ADAB9345F1EF82468C979D76C734F0B505E03CE263DC390ACEF54E",
-        "size": 116996791,
-        "url": "https://github.com/boyfk8/promo-menupage-releases/releases/download/v0.5.46/PromoMenupageAutomation_CloudInstall_0.5.46.zip"
+        "filename": "PromoMenupageAutomation_CloudInstall_0.5.47.zip",
+        "sha256": "A831ED02EAA00F44A24E122DD5E0DB3A876919E2271B4FE7DDECD2A0EF962CC8",
+        "size": 116997309,
+        "url": "https://github.com/boyfk8/promo-menupage-releases/releases/download/v0.5.47/PromoMenupageAutomation_CloudInstall_0.5.47.zip"
       },
       "updatePackage": {
-        "filename": "PromoMenupageAutomation_Update_0.5.46.zip",
-        "sha256": "6CA92D4B4395C87CCAD446A7365CDDE80A15B2EE9E481B2B41C1316CD2612E2D",
-        "size": 90336176,
-        "url": "https://github.com/boyfk8/promo-menupage-releases/releases/download/v0.5.46/PromoMenupageAutomation_Update_0.5.46.zip"
+        "filename": "PromoMenupageAutomation_Update_0.5.47.zip",
+        "sha256": "B7588F47164A789E2EF06DC4A7801D47D2FACACA4C11BD4FC4D8AC375E904B54",
+        "size": 90336695,
+        "url": "https://github.com/boyfk8/promo-menupage-releases/releases/download/v0.5.47/PromoMenupageAutomation_Update_0.5.47.zip"
       },
       "ccx": {
-        "filename": "com.amarintv.promo.menupagebuilder_0.5.46.ccx",
-        "sha256": "0D44AB57037D9B780916DD587367D8EB76A245C5DCAB08BF4A9DACD9249331B2",
-        "size": 91920,
-        "url": "https://github.com/boyfk8/promo-menupage-releases/releases/download/v0.5.46/com.amarintv.promo.menupagebuilder_0.5.46.ccx"
+        "filename": "com.amarintv.promo.menupagebuilder_0.5.47.ccx",
+        "sha256": "850C20422AF2B4BD98AF403C880940A79606C25BE9EDD6FD5D4DA9544BE1B5D0",
+        "size": 91919,
+        "url": "https://github.com/boyfk8/promo-menupage-releases/releases/download/v0.5.47/com.amarintv.promo.menupagebuilder_0.5.47.ccx"
       },
       "installPage": "https://github.com/boyfk8/promo-menupage-releases/releases/latest"
     }
