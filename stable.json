@@ -3,43 +3,42 @@
   "product": "Promo Menupage Automation",
   "pluginId": "com.amarintv.promo.menupagebuilder",
   "channel": "stable",
-  "latest": "0.5.44",
-  "generatedAt": "2026-10-06T18:38:42Z",
+  "latest": "0.5.45",
+  "generatedAt": "2026-10-07T04:39:00Z",
   "releases": [
     {
-      "version": "0.5.44",
+      "version": "0.5.45",
       "channel": "stable",
       "mandatory": false,
       "minPremiere": "25.6.0",
       "maxPremiere": "26.99.99",
-      "summary": "Promo Menupage Automation 0.5.44 verified stable release",
+      "summary": "Fix Premiere Locate Media blocking render after obsolete posters were removed",
       "notes": [
-        "Fast Web startup via cached font and glyph metrics with identical schedule semantics",
-        "Saved Word schedule becomes visible before non-critical Premiere and asset refresh",
-        "Render History is isolated so MXF inspection cannot block main Web startup",
-        "Schedule response releases the global lock before multi-megabyte response I/O",
-        "Updater verifies the actual Adobe-installed UXP Plugin version through Adobe UPIA",
-        "Same-version repair automatically fixes an old or missing Plugin when the App is current",
-        "Update completes only when App, Backend and Adobe-installed UXP Plugin versions match",
-        "Operators never install CCX manually; save work and close Premiere only when prompted"
+        "Generation opens a verified local Golden copy through UXP without Locate Media for obsolete media.",
+        "Only offline media used by the selected page blocks export with REVIEW and its path.",
+        "Selected poster deletion after an asset scan blocks preflight.",
+        "Recovery opens local projects with the same options.",
+        "Premiere 26.0.2 positive live render: WED12 15-second AVC-Intra 1080 50i MXF, Technical QC passed.",
+        "Negative live test: missing active poster stopped before export; zero MXFs.",
+        "228 regression tests passed; public payload hashes verified. Database migration remains deferred."
       ],
       "installPackage": {
-        "filename": "PromoMenupageAutomation_CloudInstall_0.5.44.zip",
-        "sha256": "52BC08A32503B1B486B92A21D2FACDB6543A1753BDAB88FA005BF17FB373608B",
-        "size": 231509779,
-        "url": "https://github.com/boyfk8/promo-menupage-releases/releases/download/v0.5.44/PromoMenupageAutomation_CloudInstall_0.5.44.zip"
+        "filename": "PromoMenupageAutomation_CloudInstall_0.5.45.zip",
+        "sha256": "15B2A18DCCF5C875DF7A21689EEAEFF6B43402BC4E4A6F15DC24A96F96C197F2",
+        "size": 231512657,
+        "url": "https://github.com/boyfk8/promo-menupage-releases/releases/download/v0.5.45/PromoMenupageAutomation_CloudInstall_0.5.45.zip"
       },
       "updatePackage": {
-        "filename": "PromoMenupageAutomation_Update_0.5.44.zip",
-        "sha256": "56C47FEAEDDBA83EE205FC63B11ED88AB9416D3738E3B3CA180DF0CE254147DC",
-        "size": 204849183,
-        "url": "https://github.com/boyfk8/promo-menupage-releases/releases/download/v0.5.44/PromoMenupageAutomation_Update_0.5.44.zip"
+        "filename": "PromoMenupageAutomation_Update_0.5.45.zip",
+        "sha256": "C0ADFD9BCD45057E3DCAA0719F18FEC88013BA30B4C4A4598456FB69E5079904",
+        "size": 204852058,
+        "url": "https://github.com/boyfk8/promo-menupage-releases/releases/download/v0.5.45/PromoMenupageAutomation_Update_0.5.45.zip"
       },
       "ccx": {
-        "filename": "com.amarintv.promo.menupagebuilder_0.5.44.ccx",
-        "sha256": "C8178EC52CE9ED0BFE68AC2D20BFB498AD93491109FD07D93308A483B937AAC5",
-        "size": 90677,
-        "url": "https://github.com/boyfk8/promo-menupage-releases/releases/download/v0.5.44/com.amarintv.promo.menupagebuilder_0.5.44.ccx"
+        "filename": "com.amarintv.promo.menupagebuilder_0.5.45.ccx",
+        "sha256": "6B03B279ABB51941AA77268E8DAABA612395AC2E54B2BA21166BF7D61D92D8D8",
+        "size": 91920,
+        "url": "https://github.com/boyfk8/promo-menupage-releases/releases/download/v0.5.45/com.amarintv.promo.menupagebuilder_0.5.45.ccx"
       },
       "installPage": "https://github.com/boyfk8/promo-menupage-releases/releases/latest"
     }
