@@ -3,45 +3,46 @@
   "product": "Promo Menupage Automation",
   "pluginId": "com.amarintv.promo.menupagebuilder",
   "channel": "stable",
-  "latest": "0.5.53",
-  "generatedAt": "2026-10-08T03:44:23.467067+00:00",
+  "latest": "0.5.54",
+  "generatedAt": "2026-10-08T06:50:04.361202+00:00",
   "releases": [
     {
-      "version": "0.5.53",
+      "version": "0.5.54",
       "channel": "stable",
       "mandatory": false,
       "minPremiere": "25.6.0",
       "maxPremiere": "26.99.99",
-      "summary": "อัปเดต 0.5.53 · ปรับ UI และความปลอดภัย · Google กลางใช้ไฟล์ TeamUpdate ครั้งแรก",
+      "summary": "อัปเดต 0.5.54 · แก้ Google Docs Sync · ติดตั้งและอัปเดตผ่าน GitHub Releases เดียว",
       "notes": [
-        "Private team bootstrap is required once for central Google access; existing settings survive Web updates.",
-        "Native macOS and target-machine/human acceptance remain pending."
+        "Private Google team connection remains locally configured on existing machines.",
+        "New machines require administrator-provided Google team activation details.",
+        "Native Mac Premiere and broadcast acceptance remain pending."
       ],
       "installPackage": {
-        "filename": "PromoMenupageAutomation_CloudInstall_0.5.53.zip",
-        "sha256": "049AFAF7A1CFC9C218FE1E5B99453A92EDE55BC0315C99AF88D182D56F92701F",
-        "size": 135803602,
-        "url": "https://github.com/boyfk8/promo-menupage-releases/releases/download/v0.5.53/PromoMenupageAutomation_CloudInstall_0.5.53.zip"
+        "filename": "PromoMenupageAutomation_Windows_0.5.54_PublicAllInOne_r1.zip",
+        "sha256": "A7E0DDA8BF461373BD3BF688C2775D368458977745E05E1D380BF4746C333395",
+        "size": 135809821,
+        "url": "https://github.com/boyfk8/promo-menupage-releases/releases/download/v0.5.54/PromoMenupageAutomation_Windows_0.5.54_PublicAllInOne_r1.zip"
       },
       "updatePackage": {
-        "filename": "PromoMenupageAutomation_Update_0.5.53.zip",
-        "sha256": "F91135B07643250220C21F7F24775F0A4E99939D5D83046E10B66A83DF32D877",
-        "size": 109143363,
-        "url": "https://github.com/boyfk8/promo-menupage-releases/releases/download/v0.5.53/PromoMenupageAutomation_Update_0.5.53.zip"
-      },
-      "ccx": {
-        "filename": "com.amarintv.promo.menupagebuilder_0.5.53.ccx",
-        "sha256": "C707E5DBAB321359A95080B2DAE9D64D4F5706B60EF40461291A49501EC51D7E",
-        "size": 13930,
-        "url": "https://github.com/boyfk8/promo-menupage-releases/releases/download/v0.5.53/com.amarintv.promo.menupagebuilder_0.5.53.ccx"
+        "filename": "PromoMenupageAutomation_WindowsUpdate_0.5.54_PublicAllInOne_r1.zip",
+        "sha256": "2C86BB3E9EB20C12CD071632A249F0CD6908454FBDA4CD1BB6E25755EB217CDC",
+        "size": 109156780,
+        "url": "https://github.com/boyfk8/promo-menupage-releases/releases/download/v0.5.54/PromoMenupageAutomation_WindowsUpdate_0.5.54_PublicAllInOne_r1.zip"
       },
       "macOSCandidate": {
-        "filename": "PromoMenupageAutomation_macOS_0.5.53_candidate.zip",
-        "sha256": "E75BB0EFD4729C11E81DE39E5CD327880932AC16D6209F2CF90F2E248B78B4B5",
-        "size": 5511122,
-        "url": "https://github.com/boyfk8/promo-menupage-releases/releases/download/v0.5.53/PromoMenupageAutomation_macOS_0.5.53_candidate.zip"
+        "filename": "PromoMenupageAutomation_macOS_0.5.54_PublicAllInOne_r1_candidate.zip",
+        "sha256": "ADBAF9B70CE8FF8DAAD5691F409131C0D1A322A766ADABA17735D195019EB0CB",
+        "size": 19477005,
+        "url": "https://github.com/boyfk8/promo-menupage-releases/releases/download/v0.5.54/PromoMenupageAutomation_macOS_0.5.54_PublicAllInOne_r1_candidate.zip"
       },
-      "installPage": "https://github.com/boyfk8/promo-menupage-releases/releases/tag/v0.5.53"
+      "ccx": {
+        "filename": "com.amarintv.promo.menupagebuilder_0.5.54.ccx",
+        "sha256": "3F4E100F07741D9762090AB79E182E4ED95E19C093A145A15DDB197C12C1CCC4",
+        "size": 13930,
+        "url": "https://github.com/boyfk8/promo-menupage-releases/releases/download/v0.5.54/com.amarintv.promo.menupagebuilder_0.5.54.ccx"
+      },
+      "installPage": "https://github.com/boyfk8/promo-menupage-releases/releases/tag/v0.5.54"
     }
   ]
 }
