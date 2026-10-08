@@ -2,17 +2,17 @@
 
 This is the **single official repository** for all downloadable MENUPAGE installers, updates and Adobe Premiere UXP plugin packages. Source code, tests and release builders live in the separate private [promo-menupage-automation](https://github.com/boyfk8/promo-menupage-automation) repository.
 
-## Latest stable: 0.5.57
+## Latest stable: 0.5.58
 
-**What's new:** Shared Premiere Template Pool for new Page numbers (FRI30/SAT40) and verified CLIENT14 / NORMAL15 text animation, with automatic 15s→14s ARGB alpha graphic caching at 107.142857% playback speed. Real native Premiere visual/audio QC is still required before on-air use.
+**What's new:** Google Docs manual Sync now automatically selects PAGE + RENDER only for red rows and the Page windows displaying them. Switching authors resets the selection to that person's red impact. Source schedule and selection controls save atomically, preserving manual Text/Poster/Audio edits. Full automated regression 350/350 passed; native Premiere/Mac and human on-air validation remain separate.
 
-[Open the v0.5.57 release (7 downloadable assets)](https://github.com/boyfk8/promo-menupage-releases/releases/tag/v0.5.57)
+[Open the v0.5.58 release (7 downloadable assets)](https://github.com/boyfk8/promo-menupage-releases/releases/tag/v0.5.58)
 
 | Use case | Recommended download | Run after extracting |
 | --- | --- | --- |
-| New Windows workstation | `PromoMenupageAutomation_Windows_0.5.57_PublicAllInOne_r1.zip` | `SETUP_MENUPAGE.bat` |
-| Existing Windows workstation | `PromoMenupageAutomation_WindowsUpdate_0.5.57_PublicAllInOne_r1.zip` | `UPDATE.bat` |
-| New macOS workstation (test candidate) | `PromoMenupageAutomation_macOS_0.5.57_PublicAllInOne_r1_candidate.zip` | `SETUP_MACOS.command` |
+| New Windows workstation | `PromoMenupageAutomation_Windows_0.5.58_PublicAllInOne_r1.zip` | `SETUP_MENUPAGE.bat` |
+| Existing Windows workstation | `PromoMenupageAutomation_WindowsUpdate_0.5.58_PublicAllInOne_r1.zip` | `UPDATE.bat` |
+| New macOS workstation (test candidate) | `PromoMenupageAutomation_macOS_0.5.58_PublicAllInOne_r1_candidate.zip` | `SETUP_MACOS.command` |
 
 The release also contains the credential-free CloudInstall ZIP, standard Update ZIP, macOS source candidate and matching Premiere UXP `.ccx` package.
 
@@ -40,3 +40,12 @@ The macOS package is a **candidate** until native installation, Premiere/MXF ren
 ## 0.5.57 Graphic Transaction Hotfix
 
 Fixes Premiere UXP graphic overwrite transaction lock, skips unnecessary same-day 15s graphic writes, and shows the exact PAGE/phase/Run ID on export failure. Automatic unit/package tests passed; native Premiere pilot could not be completed because Adobe UPIA returned install status -626 on DEV. Re-test one 14-second and one 15-second Page on the target workstation before broadcast.
+
+
+## 0.5.58 Google red-impact Sync hotfix
+
+- Red Page 03 correctly selects Pages 01, 02 and 03 that display it, without selecting unrelated Pages.
+- Each explicit Google Sync aligns PAGE + RENDER checkboxes and day Render switches, even if the Doc is unchanged but previous controls were manually changed.
+- Switching between people/Google tabs never treats another author's text changes as red instructions.
+- Sync saves both source and controls with rollback on a locked-file error; Google Docs, Premiere Golden and media remain read-only.
+- The Sync notice shows the number of PAGE+RENDER Pages selected. Restart after updating; verify Backend/UXP version 0.5.58.
