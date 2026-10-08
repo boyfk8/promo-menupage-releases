@@ -2,17 +2,17 @@
 
 This is the **single official repository** for all downloadable MENUPAGE installers, updates and Adobe Premiere UXP plugin packages. Source code, tests and release builders live in the separate private [promo-menupage-automation](https://github.com/boyfk8/promo-menupage-automation) repository.
 
-## Latest stable: 0.5.56
+## Latest stable: 0.5.57
 
 **What's new:** Shared Premiere Template Pool for new Page numbers (FRI30/SAT40) and verified CLIENT14 / NORMAL15 text animation, with automatic 15s→14s ARGB alpha graphic caching at 107.142857% playback speed. Real native Premiere visual/audio QC is still required before on-air use.
 
-[Open the v0.5.56 release (7 downloadable assets)](https://github.com/boyfk8/promo-menupage-releases/releases/tag/v0.5.56)
+[Open the v0.5.57 release (7 downloadable assets)](https://github.com/boyfk8/promo-menupage-releases/releases/tag/v0.5.57)
 
 | Use case | Recommended download | Run after extracting |
 | --- | --- | --- |
-| New Windows workstation | `PromoMenupageAutomation_Windows_0.5.56_PublicAllInOne_r1.zip` | `SETUP_MENUPAGE.bat` |
-| Existing Windows workstation | `PromoMenupageAutomation_WindowsUpdate_0.5.56_PublicAllInOne_r1.zip` | `UPDATE.bat` |
-| New macOS workstation (test candidate) | `PromoMenupageAutomation_macOS_0.5.56_PublicAllInOne_r1_candidate.zip` | `SETUP_MACOS.command` |
+| New Windows workstation | `PromoMenupageAutomation_Windows_0.5.57_PublicAllInOne_r1.zip` | `SETUP_MENUPAGE.bat` |
+| Existing Windows workstation | `PromoMenupageAutomation_WindowsUpdate_0.5.57_PublicAllInOne_r1.zip` | `UPDATE.bat` |
+| New macOS workstation (test candidate) | `PromoMenupageAutomation_macOS_0.5.57_PublicAllInOne_r1_candidate.zip` | `SETUP_MACOS.command` |
 
 The release also contains the credential-free CloudInstall ZIP, standard Update ZIP, macOS source candidate and matching Premiere UXP `.ccx` package.
 
@@ -35,3 +35,8 @@ This repository is public and must not expose shared Google team relay keys, pri
 The public packages cannot automatically provide access to a private team Google document. Any optional own-account OAuth fallback configuration must likewise be provisioned privately. Word/PDF import remains available.
 
 The macOS package is a **candidate** until native installation, Premiere/MXF rendering and human visual/audio acceptance are completed. Older releases remain available for compatibility and rollback.
+
+
+## 0.5.57 Graphic Transaction Hotfix
+
+Fixes Premiere UXP graphic overwrite transaction lock, skips unnecessary same-day 15s graphic writes, and shows the exact PAGE/phase/Run ID on export failure. Automatic unit/package tests passed; native Premiere pilot could not be completed because Adobe UPIA returned install status -626 on DEV. Re-test one 14-second and one 15-second Page on the target workstation before broadcast.
