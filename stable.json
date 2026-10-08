@@ -3,45 +3,45 @@
   "product": "Promo Menupage Automation",
   "pluginId": "com.amarintv.promo.menupagebuilder",
   "channel": "stable",
-  "latest": "0.5.50",
-  "generatedAt": "2026-10-07T11:36:30Z",
+  "latest": "0.5.53",
+  "generatedAt": "2026-10-08T03:37:23.079846+00:00",
   "releases": [
     {
-      "version": "0.5.50",
+      "version": "0.5.53",
       "channel": "stable",
       "mandatory": false,
       "minPremiere": "25.6.0",
       "maxPremiere": "26.99.99",
-      "summary": "Promo Menupage Automation 0.5.50 Word-first workflow with PDF schedule import",
+      "summary": "อัปเดต 0.5.53 · ปรับ UI และความปลอดภัย · Google กลางใช้ไฟล์ TeamUpdate ครั้งแรก",
       "notes": [
-        "Google Doc sync is not part of this release; the established Word drop workflow remains primary",
-        "The same intake accepts DOCX or PDF without adding a new team workflow",
-        "PDF is parsed directly without OCR or Word conversion",
-        "Real Word-to-PDF validation matched 163/163 schedule rows for Day, Page, Code, Time, Program, Poster, type and duration",
-        "Malformed or unreadable PDF fails closed and preserves the saved schedule",
-        "PyMuPDF 1.26.4 is bundled for offline Team Setup and Update",
-        "Word remains recommended when red font formatting itself is operationally important because PDF export can flatten font color metadata",
-        "Database migration remains paused"
+        "Private team bootstrap is required once for central Google access; existing settings survive Web updates.",
+        "Native macOS and target-machine/human acceptance remain pending."
       ],
       "installPackage": {
-        "filename": "PromoMenupageAutomation_CloudInstall_0.5.50.zip",
-        "sha256": "75EB4BD6E13983E71B9E96600CD47A96A97AF70A5C4F418166F675A0CD14BC99",
-        "size": 135849318,
-        "url": "https://github.com/boyfk8/promo-menupage-releases/releases/download/v0.5.50/PromoMenupageAutomation_CloudInstall_0.5.50.zip"
+        "filename": "PromoMenupageAutomation_CloudInstall_0.5.53.zip",
+        "sha256": "049AFAF7A1CFC9C218FE1E5B99453A92EDE55BC0315C99AF88D182D56F92701F",
+        "size": 135803602,
+        "url": "https://github.com/boyfk8/promo-menupage-releases/releases/download/untagged-6f734703d5363d2cc613/PromoMenupageAutomation_CloudInstall_0.5.53.zip"
       },
       "updatePackage": {
-        "filename": "PromoMenupageAutomation_Update_0.5.50.zip",
-        "sha256": "5C0A3BEDAEE0D41CCCDD1503CEA5874CA92731CB9D9D9C18C59F7C8F12C9DB6C",
-        "size": 109188966,
-        "url": "https://github.com/boyfk8/promo-menupage-releases/releases/download/v0.5.50/PromoMenupageAutomation_Update_0.5.50.zip"
+        "filename": "PromoMenupageAutomation_Update_0.5.53.zip",
+        "sha256": "F91135B07643250220C21F7F24775F0A4E99939D5D83046E10B66A83DF32D877",
+        "size": 109143363,
+        "url": "https://github.com/boyfk8/promo-menupage-releases/releases/download/untagged-6f734703d5363d2cc613/PromoMenupageAutomation_Update_0.5.53.zip"
       },
       "ccx": {
-        "filename": "com.amarintv.promo.menupagebuilder_0.5.50.ccx",
-        "sha256": "8D7985E02C2F48A20783F7B4F2B0E7B73CDF1A613D2AC7836B2AD9C4159C773D",
-        "size": 91919,
-        "url": "https://github.com/boyfk8/promo-menupage-releases/releases/download/v0.5.50/com.amarintv.promo.menupagebuilder_0.5.50.ccx"
+        "filename": "com.amarintv.promo.menupagebuilder_0.5.53.ccx",
+        "sha256": "C707E5DBAB321359A95080B2DAE9D64D4F5706B60EF40461291A49501EC51D7E",
+        "size": 13930,
+        "url": "https://github.com/boyfk8/promo-menupage-releases/releases/download/untagged-6f734703d5363d2cc613/com.amarintv.promo.menupagebuilder_0.5.53.ccx"
       },
-      "installPage": "https://github.com/boyfk8/promo-menupage-releases/releases/latest"
+      "macOSCandidate": {
+        "filename": "PromoMenupageAutomation_macOS_0.5.53_candidate.zip",
+        "sha256": "E75BB0EFD4729C11E81DE39E5CD327880932AC16D6209F2CF90F2E248B78B4B5",
+        "size": 5511122,
+        "url": "https://github.com/boyfk8/promo-menupage-releases/releases/download/untagged-6f734703d5363d2cc613/PromoMenupageAutomation_macOS_0.5.53_candidate.zip"
+      },
+      "installPage": "https://github.com/boyfk8/promo-menupage-releases/releases/tag/v0.5.53"
     }
   ]
 }
