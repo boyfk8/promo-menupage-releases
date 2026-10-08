@@ -2,15 +2,17 @@
 
 This is the **single official repository** for all downloadable MENUPAGE installers, updates and Adobe Premiere UXP plugin packages. Source code, tests and release builders live in the separate private [promo-menupage-automation](https://github.com/boyfk8/promo-menupage-automation) repository.
 
-## Latest stable: 0.5.55
+## Latest stable: 0.5.56
 
-[Open the v0.5.55 release (7 downloadable assets)](https://github.com/boyfk8/promo-menupage-releases/releases/tag/v0.5.55)
+**What's new:** Shared Premiere Template Pool for new Page numbers (FRI30/SAT40) and verified CLIENT14 / NORMAL15 text animation, with automatic 15s→14s ARGB alpha graphic caching at 107.142857% playback speed. Real native Premiere visual/audio QC is still required before on-air use.
+
+[Open the v0.5.56 release (7 downloadable assets)](https://github.com/boyfk8/promo-menupage-releases/releases/tag/v0.5.56)
 
 | Use case | Recommended download | Run after extracting |
 | --- | --- | --- |
-| New Windows workstation | `PromoMenupageAutomation_Windows_0.5.55_PublicAllInOne_r1.zip` | `SETUP_MENUPAGE.bat` |
-| Existing Windows workstation | `PromoMenupageAutomation_WindowsUpdate_0.5.55_PublicAllInOne_r1.zip` | `UPDATE.bat` |
-| New macOS workstation (test candidate) | `PromoMenupageAutomation_macOS_0.5.55_PublicAllInOne_r1_candidate.zip` | `SETUP_MACOS.command` |
+| New Windows workstation | `PromoMenupageAutomation_Windows_0.5.56_PublicAllInOne_r1.zip` | `SETUP_MENUPAGE.bat` |
+| Existing Windows workstation | `PromoMenupageAutomation_WindowsUpdate_0.5.56_PublicAllInOne_r1.zip` | `UPDATE.bat` |
+| New macOS workstation (test candidate) | `PromoMenupageAutomation_macOS_0.5.56_PublicAllInOne_r1_candidate.zip` | `SETUP_MACOS.command` |
 
 The release also contains the credential-free CloudInstall ZIP, standard Update ZIP, macOS source candidate and matching Premiere UXP `.ccx` package.
 
