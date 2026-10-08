@@ -2,15 +2,15 @@
 
 This is the **single official repository** for all downloadable MENUPAGE installers, updates and Adobe Premiere UXP plugin packages. Source code, tests and release builders live in the separate private [promo-menupage-automation](https://github.com/boyfk8/promo-menupage-automation) repository.
 
-## Latest stable: 0.5.54
+## Latest stable: 0.5.55
 
-[Open the v0.5.54 release (7 downloadable assets)](https://github.com/boyfk8/promo-menupage-releases/releases/tag/v0.5.54)
+[Open the v0.5.55 release (7 downloadable assets)](https://github.com/boyfk8/promo-menupage-releases/releases/tag/v0.5.55)
 
 | Use case | Recommended download | Run after extracting |
 | --- | --- | --- |
-| New Windows workstation | `PromoMenupageAutomation_Windows_0.5.54_PublicAllInOne_r1.zip` | `SETUP_MENUPAGE.bat` |
-| Existing Windows workstation | `PromoMenupageAutomation_WindowsUpdate_0.5.54_PublicAllInOne_r1.zip` | `UPDATE.bat` |
-| New macOS workstation (test candidate) | `PromoMenupageAutomation_macOS_0.5.54_PublicAllInOne_r1_candidate.zip` | `SETUP_MACOS.command` |
+| New Windows workstation | `PromoMenupageAutomation_Windows_0.5.55_PublicAllInOne_r1.zip` | `SETUP_MENUPAGE.bat` |
+| Existing Windows workstation | `PromoMenupageAutomation_WindowsUpdate_0.5.55_PublicAllInOne_r1.zip` | `UPDATE.bat` |
+| New macOS workstation (test candidate) | `PromoMenupageAutomation_macOS_0.5.55_PublicAllInOne_r1_candidate.zip` | `SETUP_MACOS.command` |
 
 The release also contains the credential-free CloudInstall ZIP, standard Update ZIP, macOS source candidate and matching Premiere UXP `.ccx` package.
 
