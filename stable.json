@@ -4,7 +4,7 @@
   "pluginId": "com.amarintv.promo.menupagebuilder",
   "channel": "stable",
   "latest": "0.5.53",
-  "generatedAt": "2026-10-08T03:37:23.079846+00:00",
+  "generatedAt": "2026-10-08T03:40:27.361241+00:00",
   "releases": [
     {
       "version": "0.5.53",
@@ -21,25 +21,25 @@
         "filename": "PromoMenupageAutomation_CloudInstall_0.5.53.zip",
         "sha256": "049AFAF7A1CFC9C218FE1E5B99453A92EDE55BC0315C99AF88D182D56F92701F",
         "size": 135803602,
-        "url": "https://github.com/boyfk8/promo-menupage-releases/releases/download/untagged-6f734703d5363d2cc613/PromoMenupageAutomation_CloudInstall_0.5.53.zip"
+        "url": "https://github.com/boyfk8/promo-menupage-releases/releases/download/v0.5.53/PromoMenupageAutomation_CloudInstall_0.5.53.zip"
       },
       "updatePackage": {
         "filename": "PromoMenupageAutomation_Update_0.5.53.zip",
         "sha256": "F91135B07643250220C21F7F24775F0A4E99939D5D83046E10B66A83DF32D877",
         "size": 109143363,
-        "url": "https://github.com/boyfk8/promo-menupage-releases/releases/download/untagged-6f734703d5363d2cc613/PromoMenupageAutomation_Update_0.5.53.zip"
+        "url": "https://github.com/boyfk8/promo-menupage-releases/releases/download/v0.5.53/PromoMenupageAutomation_Update_0.5.53.zip"
       },
       "ccx": {
         "filename": "com.amarintv.promo.menupagebuilder_0.5.53.ccx",
         "sha256": "C707E5DBAB321359A95080B2DAE9D64D4F5706B60EF40461291A49501EC51D7E",
         "size": 13930,
-        "url": "https://github.com/boyfk8/promo-menupage-releases/releases/download/untagged-6f734703d5363d2cc613/com.amarintv.promo.menupagebuilder_0.5.53.ccx"
+        "url": "https://github.com/boyfk8/promo-menupage-releases/releases/download/v0.5.53/com.amarintv.promo.menupagebuilder_0.5.53.ccx"
       },
       "macOSCandidate": {
         "filename": "PromoMenupageAutomation_macOS_0.5.53_candidate.zip",
         "sha256": "E75BB0EFD4729C11E81DE39E5CD327880932AC16D6209F2CF90F2E248B78B4B5",
         "size": 5511122,
-        "url": "https://github.com/boyfk8/promo-menupage-releases/releases/download/untagged-6f734703d5363d2cc613/PromoMenupageAutomation_macOS_0.5.53_candidate.zip"
+        "url": "https://github.com/boyfk8/promo-menupage-releases/releases/download/v0.5.53/PromoMenupageAutomation_macOS_0.5.53_candidate.zip"
       },
       "installPage": "https://github.com/boyfk8/promo-menupage-releases/releases/tag/v0.5.53"
     }
