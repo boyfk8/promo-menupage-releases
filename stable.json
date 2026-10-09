@@ -3,47 +3,47 @@
   "product": "Promo Menupage Automation",
   "pluginId": "com.amarintv.promo.menupagebuilder",
   "channel": "stable",
-  "latest": "0.5.61",
-  "generatedAt": "2026-10-09T08:04:31.256645+00:00",
+  "latest": "0.5.62",
+  "generatedAt": "2026-10-09T08:44:42.831108+00:00",
   "releases": [
     {
-      "version": "0.5.61",
+      "version": "0.5.62",
       "channel": "stable",
       "mandatory": false,
       "minPremiere": "25.6.0",
       "maxPremiere": "26.99.99",
-      "summary": "อัปเดต 0.5.61 · แก้ Premiere Requires locked access ที่เครื่องใหม่",
+      "summary": "อัปเดต 0.5.62 · LINE แจ้ง Export ผ่านบริการกลาง ใช้ได้ทุกเครื่องในทีม",
       "notes": [
-        "แก้ Action ของ Premiere ให้สร้างและ Commit ภายใน lockedAccess/executeTransaction",
-        "ครอบคลุม Clone, Rename, Move, สร้างโฟลเดอร์ และ In/Out ของ Sequence",
-        "ปรับตัวติดตั้ง Adobe UPIA ให้ตรวจเวอร์ชันจริงและหยุดเมื่อค้าง",
-        "หลังอัปเดตให้ปิด/เปิด Premiere แล้ว Render ทดสอบและตรวจภาพเสียงก่อนออกอากาศ"
+        "เครื่องทีมงานที่เชื่อม Google Docs กลางสามารถใช้ LINE กลางได้ ไม่ต้องแจก Token",
+        "LINE Token และ Group ID เก็บเป็น Secret บน Cloudflare ไม่อยู่ในชุด Public Update",
+        "หน้า Settings ตรวจสถานะ LINE กลางจริงและมีปุ่มส่งข้อความทดสอบ",
+        "ส่งเมื่อ Export + Technical QC + Publish ครบ และกันการส่งซ้ำด้วย Retry Key"
       ],
       "installPackage": {
-        "filename": "PromoMenupageAutomation_Windows_0.5.61_PublicAllInOne_r1.zip",
-        "sha256": "FF6610502849032561C52BA59756AF1C72A103ABDA9711924629EDBF87B805BD",
-        "size": 135825222,
-        "url": "https://github.com/boyfk8/promo-menupage-releases/releases/download/v0.5.61/PromoMenupageAutomation_Windows_0.5.61_PublicAllInOne_r1.zip"
+        "filename": "PromoMenupageAutomation_Windows_0.5.62_PublicAllInOne_r1.zip",
+        "sha256": "E6F4ED7D0D689E6A2303CDBFA9BBFFCF748E3F42A0A0D2BDA1D7561C4F199782",
+        "size": 135827483,
+        "url": "https://github.com/boyfk8/promo-menupage-releases/releases/download/v0.5.62/PromoMenupageAutomation_Windows_0.5.62_PublicAllInOne_r1.zip"
       },
       "updatePackage": {
-        "filename": "PromoMenupageAutomation_WindowsUpdate_0.5.61_PublicAllInOne_r1.zip",
-        "sha256": "BFDD69B74139CC692283144B7F63639DF2C93D99C9530AF767B636B191B42635",
-        "size": 109174114,
-        "url": "https://github.com/boyfk8/promo-menupage-releases/releases/download/v0.5.61/PromoMenupageAutomation_WindowsUpdate_0.5.61_PublicAllInOne_r1.zip"
+        "filename": "PromoMenupageAutomation_WindowsUpdate_0.5.62_PublicAllInOne_r1.zip",
+        "sha256": "43254242AE89ACB575777E3396874B76D4AACE97725BD3FBEE18B6E5124EBA9E",
+        "size": 109176363,
+        "url": "https://github.com/boyfk8/promo-menupage-releases/releases/download/v0.5.62/PromoMenupageAutomation_WindowsUpdate_0.5.62_PublicAllInOne_r1.zip"
       },
       "macOSCandidate": {
-        "filename": "PromoMenupageAutomation_macOS_0.5.61_PublicAllInOne_r1_candidate.zip",
-        "sha256": "C3DC5E576BAC57DD53E07A0488B2DBACE940FDC06DF752A813B935DE29044EDA",
-        "size": 19492422,
-        "url": "https://github.com/boyfk8/promo-menupage-releases/releases/download/v0.5.61/PromoMenupageAutomation_macOS_0.5.61_PublicAllInOne_r1_candidate.zip"
+        "filename": "PromoMenupageAutomation_macOS_0.5.62_PublicAllInOne_r1_candidate.zip",
+        "sha256": "9722B5069E6FB614ECA5D50E71E61D9F042EF33D7DDE89B2F6A3E9B4EC8A4CB9",
+        "size": 19494156,
+        "url": "https://github.com/boyfk8/promo-menupage-releases/releases/download/v0.5.62/PromoMenupageAutomation_macOS_0.5.62_PublicAllInOne_r1_candidate.zip"
       },
       "ccx": {
-        "filename": "com.amarintv.promo.menupagebuilder_0.5.61.ccx",
-        "sha256": "F4FECF485B54655E5F0187EEA5A23BAF7DFEBC14A0DFB36B53220675FA79D262",
+        "filename": "com.amarintv.promo.menupagebuilder_0.5.62.ccx",
+        "sha256": "613724B44CD437673EEAB02F3EC469924AF3FE67C4053B516E5E37849D737051",
         "size": 16206,
-        "url": "https://github.com/boyfk8/promo-menupage-releases/releases/download/v0.5.61/com.amarintv.promo.menupagebuilder_0.5.61.ccx"
+        "url": "https://github.com/boyfk8/promo-menupage-releases/releases/download/v0.5.62/com.amarintv.promo.menupagebuilder_0.5.62.ccx"
       },
-      "installPage": "https://github.com/boyfk8/promo-menupage-releases/releases/tag/v0.5.61"
+      "installPage": "https://github.com/boyfk8/promo-menupage-releases/releases/tag/v0.5.62"
     }
   ]
 }
