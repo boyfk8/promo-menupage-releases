@@ -12,11 +12,12 @@
       "mandatory": false,
       "minPremiere": "25.6.0",
       "maxPremiere": "26.99.99",
-      "summary": "อัปเดต 0.5.61 · แก้ Google Docs Sync · ติดตั้งและอัปเดตผ่าน GitHub Releases เดียว",
+      "summary": "อัปเดต 0.5.61 · แก้ Premiere Requires locked access ที่เครื่องใหม่",
       "notes": [
-        "Private Google team connection remains locally configured on existing machines.",
-        "New machines require administrator-provided Google team activation details.",
-        "Native Mac Premiere and broadcast acceptance remain pending."
+        "แก้ Action ของ Premiere ให้สร้างและ Commit ภายใน lockedAccess/executeTransaction",
+        "ครอบคลุม Clone, Rename, Move, สร้างโฟลเดอร์ และ In/Out ของ Sequence",
+        "ปรับตัวติดตั้ง Adobe UPIA ให้ตรวจเวอร์ชันจริงและหยุดเมื่อค้าง",
+        "หลังอัปเดตให้ปิด/เปิด Premiere แล้ว Render ทดสอบและตรวจภาพเสียงก่อนออกอากาศ"
       ],
       "installPackage": {
         "filename": "PromoMenupageAutomation_Windows_0.5.61_PublicAllInOne_r1.zip",
