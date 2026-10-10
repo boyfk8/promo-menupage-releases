@@ -3,48 +3,48 @@
   "product": "Promo Menupage Automation",
   "pluginId": "com.amarintv.promo.menupagebuilder",
   "channel": "stable",
-  "latest": "0.5.69",
-  "generatedAt": "2026-10-10T14:00:49.041667+00:00",
+  "latest": "0.5.70",
+  "generatedAt": "2026-10-10T14:37:55.971044+00:00",
   "releases": [
     {
-      "version": "0.5.69",
+      "version": "0.5.70",
       "channel": "stable",
       "mandatory": false,
       "minPremiere": "25.6.0",
       "maxPremiere": "26.99.99",
-      "summary": "0.5.69: Switch Manual and Auto directly within the same Profile; Saturday-first Auto, all-day Manual checkboxes.",
+      "summary": "0.5.70: Fix multi-day Auto; show required Poster names; optional graceful Premiere close after completed Render; retain five latest local package versions.",
       "notes": [
-        "Choose Manual or Auto directly after selecting a Google Docs Profile, without Settings toggles.",
-        "Switch modes while keeping your original Profile, Text, Poster and common Output settings.",
-        "Auto day choices begin Saturday; Enable and Approved Today are visible on all Manual day cards.",
-        "Auto requires explicit Run and preserves safety checks for Poster/Template and unchanged source.",
-        "Auto-only rollback remains available via DISABLE_AUTO_MODE.bat; human audio/visual QC remains necessary."
+        "Multi-day Auto Sync and Render checks the selected set of days, not their screen order.",
+        "Blocked Auto Pages display their exact required Poster names for manual mapping.",
+        "Settings includes Close Premiere after successful Render; default OFF and never force-kills unsaved work.",
+        "Auto-only rollback and profile-shared Manual data remain available.",
+        "Broadcast Visual/Audio review remains required."
       ],
       "installPackage": {
-        "filename": "PromoMenupageAutomation_Windows_0.5.69_PublicAllInOne_r1.zip",
-        "sha256": "B5808087C90A32B67034263E5D816C3A155D2AC3C3FA67B8EE19B56DA1E4F2CF",
-        "size": 135972990,
-        "url": "https://github.com/boyfk8/promo-menupage-releases/releases/download/v0.5.69/PromoMenupageAutomation_Windows_0.5.69_PublicAllInOne_r1.zip"
+        "filename": "PromoMenupageAutomation_Windows_0.5.70_PublicAllInOne_r1.zip",
+        "sha256": "C644B98B5BB5560453DDE646B6EA92BF7E2DAB7884DA44DB6306BD58226D747B",
+        "size": 135976318,
+        "url": "https://github.com/boyfk8/promo-menupage-releases/releases/download/v0.5.70/PromoMenupageAutomation_Windows_0.5.70_PublicAllInOne_r1.zip"
       },
       "updatePackage": {
-        "filename": "PromoMenupageAutomation_WindowsUpdate_0.5.69_PublicAllInOne_r1.zip",
-        "sha256": "9CEBA35A29899E4AD20F415AAEEA527E35278C13945FEB9C3303C1B4197CEF8D",
-        "size": 109322979,
-        "url": "https://github.com/boyfk8/promo-menupage-releases/releases/download/v0.5.69/PromoMenupageAutomation_WindowsUpdate_0.5.69_PublicAllInOne_r1.zip"
+        "filename": "PromoMenupageAutomation_WindowsUpdate_0.5.70_PublicAllInOne_r1.zip",
+        "sha256": "3E675E98161CB55785C8AB0B4E2B2B22B98E35B0C2159AC564E41A4D3DB1FEC8",
+        "size": 109326480,
+        "url": "https://github.com/boyfk8/promo-menupage-releases/releases/download/v0.5.70/PromoMenupageAutomation_WindowsUpdate_0.5.70_PublicAllInOne_r1.zip"
       },
       "macOSCandidate": {
-        "filename": "PromoMenupageAutomation_macOS_0.5.69_PublicAllInOne_r1_candidate.zip",
-        "sha256": "F15B9769D721E47300085E6B3D42DE6F3032663BF3E24A018F31842406C909C6",
-        "size": 19637978,
-        "url": "https://github.com/boyfk8/promo-menupage-releases/releases/download/v0.5.69/PromoMenupageAutomation_macOS_0.5.69_PublicAllInOne_r1_candidate.zip"
+        "filename": "PromoMenupageAutomation_macOS_0.5.70_PublicAllInOne_r1_candidate.zip",
+        "sha256": "CA894195A3C5358AB5A7041BCE365D2E30F9BBA6CD0B2AB36B1DBE88CAC8EB7C",
+        "size": 19641276,
+        "url": "https://github.com/boyfk8/promo-menupage-releases/releases/download/v0.5.70/PromoMenupageAutomation_macOS_0.5.70_PublicAllInOne_r1_candidate.zip"
       },
       "ccx": {
-        "filename": "com.amarintv.promo.menupagebuilder_0.5.69.ccx",
-        "sha256": "CA36BE432BAEFDC3F276BCE8494C09099C298D015A7FAF4B55701A2DBD0423E9",
+        "filename": "com.amarintv.promo.menupagebuilder_0.5.70.ccx",
+        "sha256": "7F98E9B7D4D5426B47AD46987382A1B115A51F590B297853E2D3D2B58F41E4D9",
         "size": 94264,
-        "url": "https://github.com/boyfk8/promo-menupage-releases/releases/download/v0.5.69/com.amarintv.promo.menupagebuilder_0.5.69.ccx"
+        "url": "https://github.com/boyfk8/promo-menupage-releases/releases/download/v0.5.70/com.amarintv.promo.menupagebuilder_0.5.70.ccx"
       },
-      "installPage": "https://github.com/boyfk8/promo-menupage-releases/releases/tag/v0.5.69"
+      "installPage": "https://github.com/boyfk8/promo-menupage-releases/releases/tag/v0.5.70"
     }
   ]
 }
