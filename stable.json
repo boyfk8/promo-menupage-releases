@@ -3,44 +3,44 @@
   "product": "Promo Menupage Automation",
   "pluginId": "com.amarintv.promo.menupagebuilder",
   "channel": "stable",
-  "latest": "0.5.79",
-  "generatedAt": "2026-10-14T05:42:03.838889+00:00",
+  "latest": "0.5.80",
+  "generatedAt": "2026-10-14T07:02:53.824433+00:00",
   "releases": [
     {
-      "version": "0.5.79",
+      "version": "0.5.80",
       "channel": "stable",
       "mandatory": false,
       "minPremiere": "25.6.0",
       "maxPremiere": "26.99.99",
-      "summary": "0.5.79: verified stale Auto Stage recovery in Update ZIP plus correct current Cloud Update error reports",
+      "summary": "0.5.80: fix false UPDATE OK on cancel; provide read-only authority-conflict diagnostic ZIP",
       "notes": [
-        "Verified terminal Auto Stage recovery in UPDATE.bat with explicit consent, immutable backup, and trusted Windows Backend identity.",
-        "A nonterminal or mismatched Stage remains blocked. Never manually delete the ownership marker or MXFs.",
-        "STAGE_RECOVERY.bat can repair a legacy user installation before a Cloud Update retry.",
-        "Per-request detached installer logs show the real latest error, not historical Access denied.",
-        "Developer Git checkouts are protected from Cloud Installer migration.",
-        "Existing UI resumable update/progress and startup fixes retained.",
-        "Real target workstation/Win25 acceptance OPEN, public packages contain no private Team LINE/Google secrets."
+        "A declined or empty confirmation is now CANCELLED (exit 5), never UPDATE OK.",
+        "The Update BAT explicitly asks confirmation and uses --yes only after consent.",
+        "Authority conflicts exit 6 without deleting or overwriting either installation; generate a read-only JSON report.",
+        "Tiny Diagnostics_0.5.80 ZIP lets legacy user machines inspect records, both app roots, active Backend and shortcut without installing.",
+        "STAGE_RECOVERY reports not-needed as success, not Recovery blocked.",
+        "Previously verified Auto Stage safety guards, read-only Golden and rollback remain unchanged.",
+        "Actual affected user machine repair remains OPEN until diagnostics and live install are verified; no private LINE/Google secrets shipped."
       ],
       "installPackage": {
-        "filename": "PromoMenupageAutomation_CloudInstall_0.5.79.zip",
-        "sha256": "CB35099CA715F323978D1F04FFC8B7E71F9D30589418196BCEAE1704CE9A2677",
-        "size": 136176565,
-        "url": "https://github.com/boyfk8/promo-menupage-releases/releases/download/v0.5.79/PromoMenupageAutomation_CloudInstall_0.5.79.zip"
+        "filename": "PromoMenupageAutomation_CloudInstall_0.5.80.zip",
+        "sha256": "2035F094F602B9C111AE4402F3A88199A9F70274E29040604CEE90252F497AEA",
+        "size": 136182783,
+        "url": "https://github.com/boyfk8/promo-menupage-releases/releases/download/v0.5.80/PromoMenupageAutomation_CloudInstall_0.5.80.zip"
       },
       "updatePackage": {
-        "filename": "PromoMenupageAutomation_Update_0.5.79.zip",
-        "sha256": "138C6AE5B3BEC2533D808EEBA954CBA93AA03F890A5886A8CF6A1E6AC1F87903",
-        "size": 109566866,
-        "url": "https://github.com/boyfk8/promo-menupage-releases/releases/download/v0.5.79/PromoMenupageAutomation_Update_0.5.79.zip"
+        "filename": "PromoMenupageAutomation_Update_0.5.80.zip",
+        "sha256": "0A3A1CB501CA04A6E554EA38259F9E6ACC3429B68DB0BD0A538A4C460B84B636",
+        "size": 109579479,
+        "url": "https://github.com/boyfk8/promo-menupage-releases/releases/download/v0.5.80/PromoMenupageAutomation_Update_0.5.80.zip"
       },
       "ccx": {
-        "filename": "com.amarintv.promo.menupagebuilder_0.5.79.ccx",
-        "sha256": "E01BFFE75CD5FBDF8B7906A5AB38B552192B8BB7C6845501A2FC835782DA7426",
-        "size": 96786,
-        "url": "https://github.com/boyfk8/promo-menupage-releases/releases/download/v0.5.79/com.amarintv.promo.menupagebuilder_0.5.79.ccx"
+        "filename": "com.amarintv.promo.menupagebuilder_0.5.80.ccx",
+        "sha256": "397086285AE256829DCC7174DE05509BF43E317268EF1EB038CB801D1E251B15",
+        "size": 96787,
+        "url": "https://github.com/boyfk8/promo-menupage-releases/releases/download/v0.5.80/com.amarintv.promo.menupagebuilder_0.5.80.ccx"
       },
-      "installPage": "https://github.com/boyfk8/promo-menupage-releases/releases/tag/v0.5.79"
+      "installPage": "https://github.com/boyfk8/promo-menupage-releases/releases/tag/v0.5.80"
     }
   ]
 }
