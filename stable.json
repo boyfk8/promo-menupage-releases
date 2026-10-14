@@ -3,41 +3,43 @@
   "product": "Promo Menupage Automation",
   "pluginId": "com.amarintv.promo.menupagebuilder",
   "channel": "stable",
-  "latest": "0.5.77",
-  "generatedAt": "2026-10-14T04:32:46.382221+00:00",
+  "latest": "0.5.78",
+  "generatedAt": "2026-10-14T05:01:33.342680+00:00",
   "releases": [
     {
-      "version": "0.5.77",
+      "version": "0.5.78",
       "channel": "stable",
       "mandatory": false,
       "minPremiere": "25.6.0",
       "maxPremiere": "26.99.99",
-      "summary": "Hotfix 0.5.77: fix missing managed_templates in Update ZIP from 0.5.73/0.5.76",
+      "summary": "0.5.78: keep Cloud Update progress and terminal error visible; persist detached installer failures",
       "notes": [
-        "Fix extracted Update bootstrap imports before staging a managed-template transaction.",
-        "Preserve profile/LINE/user WIP during upgrade; back up and verify target before activation.",
-        "Premiere25 real host/user machine verification remains required; no Mac certification.",
-        "CloudInstall is public-safe. Private TeamReady Google/LINE installer is NOT published."
+        "Persist installer startup/import failures with a requestId and local log.",
+        "A refreshed web page recovers active update progress and the final result.",
+        "Detect stale startup and show actionable failure instead of disappearing.",
+        "Preserve existing operator data; isolated 0.5.73 bootstrap test PASS.",
+        "Premiere 25 and actual affected Windows machine acceptance still open.",
+        "No LINE/Google private TeamReady credentials published."
       ],
       "installPackage": {
-        "filename": "PromoMenupageAutomation_CloudInstall_0.5.77.zip",
-        "sha256": "8E0522F9272F436C2A2D9EF2D627FFBC40927929B3E3C442683DE8E7A17A36B6",
-        "size": 136169428,
-        "url": "https://github.com/boyfk8/promo-menupage-releases/releases/download/v0.5.77/PromoMenupageAutomation_CloudInstall_0.5.77.zip"
+        "filename": "PromoMenupageAutomation_CloudInstall_0.5.78.zip",
+        "sha256": "CA7BEAB951FD1F0C9D1A75048047B82EE9B0F01C6D9C6CC0EAD088D832B355FB",
+        "size": 136171239,
+        "url": "https://github.com/boyfk8/promo-menupage-releases/releases/download/v0.5.78/PromoMenupageAutomation_CloudInstall_0.5.78.zip"
       },
       "updatePackage": {
-        "filename": "PromoMenupageAutomation_Update_0.5.77.zip",
-        "sha256": "FB6FF53C753535ACA4AAC90C0EAEF43724E1D7153EB425708AED704FB6B46F53",
-        "size": 109554905,
-        "url": "https://github.com/boyfk8/promo-menupage-releases/releases/download/v0.5.77/PromoMenupageAutomation_Update_0.5.77.zip"
+        "filename": "PromoMenupageAutomation_Update_0.5.78.zip",
+        "sha256": "FC2206EBAC7D234B190936263C38FEFA6ABF3AE57B4B7F803D582AC2522EBB1C",
+        "size": 109556714,
+        "url": "https://github.com/boyfk8/promo-menupage-releases/releases/download/v0.5.78/PromoMenupageAutomation_Update_0.5.78.zip"
       },
       "ccx": {
-        "filename": "com.amarintv.promo.menupagebuilder_0.5.77.ccx",
-        "sha256": "381774DDD2B2FD64B3DADB876CCDF497F8A6FE3651956DDD7C0F1C96AF993FAD",
-        "size": 96783,
-        "url": "https://github.com/boyfk8/promo-menupage-releases/releases/download/v0.5.77/com.amarintv.promo.menupagebuilder_0.5.77.ccx"
+        "filename": "com.amarintv.promo.menupagebuilder_0.5.78.ccx",
+        "sha256": "58A04A84C976D7FEDEDFFDE21E690B34B0F9D9A98B2DBD27E3A0DDA5F61CF8F9",
+        "size": 96787,
+        "url": "https://github.com/boyfk8/promo-menupage-releases/releases/download/v0.5.78/com.amarintv.promo.menupagebuilder_0.5.78.ccx"
       },
-      "installPage": "https://github.com/boyfk8/promo-menupage-releases/releases/tag/v0.5.77"
+      "installPage": "https://github.com/boyfk8/promo-menupage-releases/releases/tag/v0.5.78"
     }
   ]
 }
