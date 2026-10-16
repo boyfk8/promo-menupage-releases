@@ -3,9 +3,48 @@
   "product": "Promo Menupage Automation",
   "pluginId": "com.amarintv.promo.menupagebuilder",
   "channel": "stable",
-  "latest": "0.5.83",
-  "generatedAt": "2026-10-16T04:03:22.546140+00:00",
+  "latest": "0.5.84",
+  "generatedAt": "2026-10-16T06:39:33.381564+00:00",
   "releases": [
+    {
+      "version": "0.5.84",
+      "channel": "stable",
+      "mandatory": false,
+      "minPremiere": "25.6.0",
+      "maxPremiere": "26.99.99",
+      "summary": "0.5.84: แก้ Cloud Update ติด Stage ค้าง และหน้า Auto ตรวจเอง",
+      "notes": [
+        "Cloud Update ตรวจหลักฐานงานจบและสำรองก่อนปล่อย Stage ค้าง ไม่ต้องรันตัวแก้แยก",
+        "ปิด Premiere และจบงานก่อน Update; งานที่ยังทำอยู่หรือหลักฐานไม่ครบยังคง REVIEW",
+        "หน้า Auto แจ้งข้อมูลเปลี่ยนแทนตรวจ/Sync เอง รอให้ผู้ใช้กดตรวจใหม่",
+        "เก็บข้อมูลผู้ใช้และสื่อเดิม; ไม่เปลี่ยนงานออกแบบหรือวิธี Render"
+      ],
+      "installPackage": {
+        "filename": "PromoMenupageAutomation_CloudInstall_0.5.84.zip",
+        "sha256": "7DBD9EFEC2C6E99AA3A4129372089CD7CD846503D1659B17AE18FDC3F7D62937",
+        "size": 136192405,
+        "url": "https://github.com/boyfk8/promo-menupage-releases/releases/download/v0.5.84/PromoMenupageAutomation_CloudInstall_0.5.84.zip"
+      },
+      "updatePackage": {
+        "filename": "PromoMenupageAutomation_Update_0.5.84.zip",
+        "sha256": "739E20A21530E599422E9CFF2979A3F0076D27E75447CC9C8A257E4E32C6E5E5",
+        "size": 109592611,
+        "url": "https://github.com/boyfk8/promo-menupage-releases/releases/download/v0.5.84/PromoMenupageAutomation_Update_0.5.84.zip"
+      },
+      "recoveryPackage": {
+        "filename": "PromoMenupageAutomation_OneClickRecovery_0.5.84.zip",
+        "sha256": "86FD16F8BE94F000498E127789AFC1AAF106F4C190D0EDB45196E7D5A931C2BB",
+        "size": 109680238,
+        "url": "https://github.com/boyfk8/promo-menupage-releases/releases/download/v0.5.84/PromoMenupageAutomation_OneClickRecovery_0.5.84.zip"
+      },
+      "ccx": {
+        "filename": "com.amarintv.promo.menupagebuilder_0.5.84.ccx",
+        "sha256": "11D951F498A6CC90D8430A03E9F6220165D2DC17A1987C55A3C16BC0DF924A18",
+        "size": 96786,
+        "url": "https://github.com/boyfk8/promo-menupage-releases/releases/download/v0.5.84/com.amarintv.promo.menupagebuilder_0.5.84.ccx"
+      },
+      "installPage": "https://github.com/boyfk8/promo-menupage-releases/releases/tag/v0.5.84"
+    },
     {
       "version": "0.5.83",
       "channel": "stable",
