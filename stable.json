@@ -3,9 +3,50 @@
   "product": "Promo Menupage Automation",
   "pluginId": "com.amarintv.promo.menupagebuilder",
   "channel": "stable",
-  "latest": "0.5.80",
-  "generatedAt": "2026-10-14T07:02:53.824433+00:00",
+  "latest": "0.5.83",
+  "generatedAt": "2026-10-16T04:03:22.546140+00:00",
   "releases": [
+    {
+      "version": "0.5.83",
+      "channel": "stable",
+      "mandatory": false,
+      "minPremiere": "25.6.0",
+      "maxPremiere": "26.99.99",
+      "summary": "0.5.83: แก้โปสเตอร์ Auto/Manual, Google, ปุ่มหยุดตั้งแต่เริ่มงาน และปิดตัวโปรแกรม Premiere หลัง Render",
+      "notes": [
+        "บันทึกโปสเตอร์มี animation และรักษา Page ที่เลือกทั้ง Auto/Manual",
+        "เพิ่ม Stop ตั้งแต่ตรวจข้อมูล/เตรียม Render; คำสั่งที่ส่งแล้วหยุดเฉพาะ Run ที่ยืนยัน",
+        "ปิดตัวโปรแกรม Premiere ต่อจาก Native ACK รองรับ Path Windows ที่เขียนต่างรูปแบบ",
+        "แก้ Google profile refresh/OAuth และสลับโหมด พร้อมสถานะเวอร์ชัน/อัปเดตที่ชัดเจน",
+        "จบงานและปิด Premiere ก่อน Update; เครื่องเดิมที่ติดปัญหาใช้ OneClickRecovery",
+        "ต้องตรวจภาพ/เสียงของแต่ละงานก่อนออกอากาศ"
+      ],
+      "installPackage": {
+        "filename": "PromoMenupageAutomation_CloudInstall_0.5.83.zip",
+        "sha256": "9DEEF130ECCFF4925BE028EB72AD71BBB25EF07C096F01AEC68B3433A59F8ABE",
+        "size": 136190611,
+        "url": "https://github.com/boyfk8/promo-menupage-releases/releases/download/v0.5.83/PromoMenupageAutomation_CloudInstall_0.5.83.zip"
+      },
+      "updatePackage": {
+        "filename": "PromoMenupageAutomation_Update_0.5.83.zip",
+        "sha256": "B19F2150A6B1B8B0E889DD0338834AFEB6947449150C1AE05FFE3C01B41AC15D",
+        "size": 109589187,
+        "url": "https://github.com/boyfk8/promo-menupage-releases/releases/download/v0.5.83/PromoMenupageAutomation_Update_0.5.83.zip"
+      },
+      "recoveryPackage": {
+        "filename": "PromoMenupageAutomation_OneClickRecovery_0.5.83.zip",
+        "sha256": "F0BC2215EE68F7C83FA986E9378E823B858CBAA0C89AFA2976542DBD5B1DA1CD",
+        "size": 109675182,
+        "url": "https://github.com/boyfk8/promo-menupage-releases/releases/download/v0.5.83/PromoMenupageAutomation_OneClickRecovery_0.5.83.zip"
+      },
+      "ccx": {
+        "filename": "com.amarintv.promo.menupagebuilder_0.5.83.ccx",
+        "sha256": "7298B83BC62FC9486C548F458618DDAD4E751685EE5ED67BEB2D14C12248165C",
+        "size": 96787,
+        "url": "https://github.com/boyfk8/promo-menupage-releases/releases/download/v0.5.83/com.amarintv.promo.menupagebuilder_0.5.83.ccx"
+      },
+      "installPage": "https://github.com/boyfk8/promo-menupage-releases/releases/tag/v0.5.83"
+    },
     {
       "version": "0.5.80",
       "channel": "stable",
