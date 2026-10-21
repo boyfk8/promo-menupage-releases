@@ -3,9 +3,48 @@
   "product": "Promo Menupage Automation",
   "pluginId": "com.amarintv.promo.menupagebuilder",
   "channel": "stable",
-  "latest": "0.5.88",
-  "generatedAt": "2026-10-19T08:14:57.141924+00:00",
+  "latest": "0.5.89",
+  "generatedAt": "2026-10-21T04:19:37.704138+00:00",
   "releases": [
+    {
+      "version": "0.5.89",
+      "channel": "stable",
+      "mandatory": false,
+      "minPremiere": "25.6.0",
+      "maxPremiere": "26.99.99",
+      "summary": "0.5.89: หน้าจอ Manual/Auto ตรงกัน ตั้งค่าคลังใน Auto และแสดงไม่มีแก้ไขผังถูกต้อง",
+      "notes": [
+        "แถบปุ่ม ผู้ใช้งาน สถานะ และตั้งค่า Path/คลังไฟล์อยู่ตำแหน่งเดียวกันทั้งสองโหมด",
+        "Auto บันทึก Source และ SYNC คลังได้ พร้อมล็อกระหว่างตรวจ/Render/แก้ข้อความค้าง",
+        "วันที่ไม่มีตัวแดงหรือ Page ได้รับผลกระทบแสดง ไม่มีแก้ไขผัง ไม่ขึ้น identity REVIEW ผิดและไม่ส่ง Render",
+        "แก้ Mac Output receipt และสถานะ Google แข่งกัน; จบงานและปิด Premiere ก่อนอัปเดต"
+      ],
+      "installPackage": {
+        "filename": "PromoMenupageAutomation_CloudInstall_0.5.89.zip",
+        "sha256": "430909BEB599750901254C614C8F15DA4DE5141DB8C32B0981368ADB9A5D0CD2",
+        "size": 136204881,
+        "url": "https://github.com/boyfk8/promo-menupage-releases/releases/download/v0.5.89/PromoMenupageAutomation_CloudInstall_0.5.89.zip"
+      },
+      "updatePackage": {
+        "filename": "PromoMenupageAutomation_Update_0.5.89.zip",
+        "sha256": "38C336B2572C13E10D7F5BBBC9E47AC05ECC3AF072B4BAE513EAF11E31EB737C",
+        "size": 109607129,
+        "url": "https://github.com/boyfk8/promo-menupage-releases/releases/download/v0.5.89/PromoMenupageAutomation_Update_0.5.89.zip"
+      },
+      "recoveryPackage": {
+        "filename": "PromoMenupageAutomation_OneClickRecovery_0.5.89.zip",
+        "sha256": "0CACCF54E3E69C3A6A4414E71E33D6C4D626560018E9D82F0226E5A1CF4E79E0",
+        "size": 109701447,
+        "url": "https://github.com/boyfk8/promo-menupage-releases/releases/download/v0.5.89/PromoMenupageAutomation_OneClickRecovery_0.5.89.zip"
+      },
+      "ccx": {
+        "filename": "com.amarintv.promo.menupagebuilder_0.5.89.ccx",
+        "sha256": "F0D5A5D18E6A1AAAC9424F24700F852F957A1952B8DE11022908499853139701",
+        "size": 96788,
+        "url": "https://github.com/boyfk8/promo-menupage-releases/releases/download/v0.5.89/com.amarintv.promo.menupagebuilder_0.5.89.ccx"
+      },
+      "installPage": "https://github.com/boyfk8/promo-menupage-releases/releases/tag/v0.5.89"
+    },
     {
       "version": "0.5.88",
       "channel": "stable",
