@@ -3,9 +3,49 @@
   "product": "Promo Menupage Automation",
   "pluginId": "com.amarintv.promo.menupagebuilder",
   "channel": "stable",
-  "latest": "0.5.89",
-  "generatedAt": "2026-10-21T04:19:37.704138+00:00",
+  "latest": "0.5.90",
+  "generatedAt": "2026-10-26T03:59:18.849770+00:00",
   "releases": [
+    {
+      "version": "0.5.90",
+      "channel": "stable",
+      "mandatory": false,
+      "minPremiere": "25.6.0",
+      "maxPremiere": "26.99.99",
+      "summary": "0.5.90: แก้คำ สลาก, แก้ Text ตรง Preview ใน Auto และเพิ่มสัตว์เลี้ยง/สกินที่เปิดใช้และถอดออกได้",
+      "notes": [
+        "ตัดบรรทัดชื่อถ่ายทอดสดการออกรางวัลสลากกินแบ่งรัฐบาลโดยคงคำ สลาก ไว้ด้วยกัน",
+        "Auto ดับเบิลคลิกหรือกด F2 เพื่อแก้ข้อความใน Preview แล้วบันทึกได้ พร้อมยืนยันข้อความจาก Backend",
+        "เมนู สัตว์เลี้ยง / สกิน · ทดลอง เปิดใช้เอง พร้อมเพื่อน สกิล และห้องแต่งตัว; พักเอฟเฟกต์ระหว่าง Render",
+        "หยุดหรือถอดส่วนเสริมได้ เลือกเก็บหรือลบแต้ม/คลังแยกจากข้อมูลงานหลัก; ไฟล์ที่แก้เองหยุดให้ตรวจ",
+        "จบงานและปิด Premiere ก่อนอัปเดต; ชุด Cloud สำหรับ Windows การ Render/ภาพจริงบนเครื่องทีมยังต้องตรวจ"
+      ],
+      "installPackage": {
+        "filename": "PromoMenupageAutomation_CloudInstall_0.5.90.zip",
+        "sha256": "490292883A8F641C704B8420F07A82AF44A7559798FC4EF59BEDB825C1DB83E5",
+        "size": 143921777,
+        "url": "https://github.com/boyfk8/promo-menupage-releases/releases/download/v0.5.90/PromoMenupageAutomation_CloudInstall_0.5.90.zip"
+      },
+      "updatePackage": {
+        "filename": "PromoMenupageAutomation_Update_0.5.90.zip",
+        "sha256": "34B083ED563AD836532BA88FB721E1845D6B3BCF3485CFA488C672B8B29DAD8E",
+        "size": 117326247,
+        "url": "https://github.com/boyfk8/promo-menupage-releases/releases/download/v0.5.90/PromoMenupageAutomation_Update_0.5.90.zip"
+      },
+      "recoveryPackage": {
+        "filename": "PromoMenupageAutomation_OneClickRecovery_0.5.90.zip",
+        "sha256": "4FC7CCB82EAC3F900004FD68C9DB52038F926895BE9431F3EE7DFE78A537A52E",
+        "size": 117420566,
+        "url": "https://github.com/boyfk8/promo-menupage-releases/releases/download/v0.5.90/PromoMenupageAutomation_OneClickRecovery_0.5.90.zip"
+      },
+      "ccx": {
+        "filename": "com.amarintv.promo.menupagebuilder_0.5.90.ccx",
+        "sha256": "9E2DC66CBBF1DFFB46FC60672668AA5222C25BF19AB3D47EBC0AD0779CDD7DD9",
+        "size": 96871,
+        "url": "https://github.com/boyfk8/promo-menupage-releases/releases/download/v0.5.90/com.amarintv.promo.menupagebuilder_0.5.90.ccx"
+      },
+      "installPage": "https://github.com/boyfk8/promo-menupage-releases/releases/tag/v0.5.90"
+    },
     {
       "version": "0.5.89",
       "channel": "stable",
