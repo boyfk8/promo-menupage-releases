@@ -3,9 +3,48 @@
   "product": "Promo Menupage Automation",
   "pluginId": "com.amarintv.promo.menupagebuilder",
   "channel": "stable",
-  "latest": "0.5.90",
-  "generatedAt": "2026-10-26T03:59:18.849770+00:00",
+  "latest": "0.5.91",
+  "generatedAt": "2026-10-27T07:24:16.613346+00:00",
   "releases": [
+    {
+      "version": "0.5.91",
+      "channel": "stable",
+      "mandatory": false,
+      "minPremiere": "25.6.0",
+      "maxPremiere": "26.99.99",
+      "summary": "0.5.91: แก้เชื่อม Google และ Sync DOC ผ่าน แต่ Auto Render ยังเรียกบริการกลาง",
+      "notes": [
+        "ใช้สถานะ Google ชุดเดียวกันระหว่างหน้าเชื่อมต่อ Sync DOC และ Auto Render",
+        "แก้บางเครื่องเชื่อมบัญชี Google ผ่านแล้ว แต่ Render ยังแจ้งตัวเชื่อม Google กลางไม่พร้อม",
+        "จบงาน บันทึกและปิด Premiere ก่อนอัปเดต จากนั้น Sync DOC และตรวจข้อมูลก่อน Render ใหม่",
+        "คงข้อมูลและสิทธิ์ Google ประจำเครื่อง; ผล Render จริงบนเครื่องที่มีปัญหายังต้องตรวจหลังอัปเดต"
+      ],
+      "installPackage": {
+        "filename": "PromoMenupageAutomation_CloudInstall_0.5.91.zip",
+        "sha256": "0B0FB1EBBD6276D3C96FCCC41298D67111E7FA4FECCF6EEA97DDF5A1CFAC3DC5",
+        "size": 143921888,
+        "url": "https://github.com/boyfk8/promo-menupage-releases/releases/download/v0.5.91/PromoMenupageAutomation_CloudInstall_0.5.91.zip"
+      },
+      "updatePackage": {
+        "filename": "PromoMenupageAutomation_Update_0.5.91.zip",
+        "sha256": "27D47C9D6CE0D8AB538803E82E037049B9164750FCD93C9DD367DDA48A229A52",
+        "size": 117326359,
+        "url": "https://github.com/boyfk8/promo-menupage-releases/releases/download/v0.5.91/PromoMenupageAutomation_Update_0.5.91.zip"
+      },
+      "recoveryPackage": {
+        "filename": "PromoMenupageAutomation_OneClickRecovery_0.5.91.zip",
+        "sha256": "909C5900845E61A40910ECD3D76528127A38CE81D469D371C2A578173D3BB0B8",
+        "size": 117420677,
+        "url": "https://github.com/boyfk8/promo-menupage-releases/releases/download/v0.5.91/PromoMenupageAutomation_OneClickRecovery_0.5.91.zip"
+      },
+      "ccx": {
+        "filename": "com.amarintv.promo.menupagebuilder_0.5.91.ccx",
+        "sha256": "48F525BBD25C0BAB4F706773327B6BC70AC60F61340F056102507AE3F28A88DB",
+        "size": 96870,
+        "url": "https://github.com/boyfk8/promo-menupage-releases/releases/download/v0.5.91/com.amarintv.promo.menupagebuilder_0.5.91.ccx"
+      },
+      "installPage": "https://github.com/boyfk8/promo-menupage-releases/releases/tag/v0.5.91"
+    },
     {
       "version": "0.5.90",
       "channel": "stable",
