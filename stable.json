@@ -3,9 +3,49 @@
   "product": "Promo Menupage Automation",
   "pluginId": "com.amarintv.promo.menupagebuilder",
   "channel": "stable",
-  "latest": "0.5.91",
-  "generatedAt": "2026-10-27T07:24:16.613346+00:00",
+  "latest": "0.5.92",
+  "generatedAt": "2026-10-27T08:16:51.036894+00:00",
   "releases": [
+    {
+      "version": "0.5.92",
+      "channel": "stable",
+      "mandatory": false,
+      "minPremiere": "25.6.0",
+      "maxPremiere": "26.99.99",
+      "summary": "0.5.92: ตัวอัปเดตตรวจและซ่อมระบบอัตโนมัติ พร้อมตัวแก้ Google/Auto Render",
+      "notes": [
+        "ตรวจ Python และซ่อมไลบรารีใน runtime ส่วนตัวจากไฟล์ออฟไลน์ โดยเก็บ Python กลางและข้อมูลงานเดิม",
+        "รอไฟล์ที่ Windows ล็อกชั่วคราว และตรวจปลั๊กอินจริงซ้ำเมื่อ Adobe รายงานผลคลาดเคลื่อน",
+        "เก็บรายงานและรหัสอาการอัตโนมัติ หากยังไม่สำเร็จจะแสดงขั้นตอนถัดไปแทนให้ผู้ใช้หา Log",
+        "รวมตัวแก้ Sync DOC ผ่านแต่ Auto Render ยังเรียกบริการกลางจาก .91",
+        "จบงาน บันทึกและปิด Premiere แล้วกดตรวจอัปเดตเพื่อติดตั้ง .92 ได้จาก .90/.91"
+      ],
+      "installPackage": {
+        "filename": "PromoMenupageAutomation_CloudInstall_0.5.92.zip",
+        "sha256": "13BEF9A07A08EDF6CDF843A4A9024E0A9E281F4328FF59284C9FDF329AC427A7",
+        "size": 143926653,
+        "url": "https://github.com/boyfk8/promo-menupage-releases/releases/download/v0.5.92/PromoMenupageAutomation_CloudInstall_0.5.92.zip"
+      },
+      "updatePackage": {
+        "filename": "PromoMenupageAutomation_Update_0.5.92.zip",
+        "sha256": "DFA378533191505860BC62A5F485C410ECEAE7FE8139C767A06082596EDE1F3B",
+        "size": 117333856,
+        "url": "https://github.com/boyfk8/promo-menupage-releases/releases/download/v0.5.92/PromoMenupageAutomation_Update_0.5.92.zip"
+      },
+      "recoveryPackage": {
+        "filename": "PromoMenupageAutomation_OneClickRecovery_0.5.92.zip",
+        "sha256": "686E7EE6574881E8E3DCC97EC585921309FD3B56C8F7A63102BE99322A88C1E3",
+        "size": 117431932,
+        "url": "https://github.com/boyfk8/promo-menupage-releases/releases/download/v0.5.92/PromoMenupageAutomation_OneClickRecovery_0.5.92.zip"
+      },
+      "ccx": {
+        "filename": "com.amarintv.promo.menupagebuilder_0.5.92.ccx",
+        "sha256": "E9CFE3F6DC1E7245BDC53AF6E1D037C1D71CEA2E66F9569E437B40CDE7C03D8A",
+        "size": 96871,
+        "url": "https://github.com/boyfk8/promo-menupage-releases/releases/download/v0.5.92/com.amarintv.promo.menupagebuilder_0.5.92.ccx"
+      },
+      "installPage": "https://github.com/boyfk8/promo-menupage-releases/releases/tag/v0.5.92"
+    },
     {
       "version": "0.5.91",
       "channel": "stable",
