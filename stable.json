@@ -3,9 +3,48 @@
   "product": "Promo Menupage Automation",
   "pluginId": "com.amarintv.promo.menupagebuilder",
   "channel": "stable",
-  "latest": "0.5.95",
-  "generatedAt": "2026-10-27T16:00:43.697794+00:00",
+  "latest": "0.5.97",
+  "generatedAt": "2026-10-28T14:43:50.290843+00:00",
   "releases": [
+    {
+      "version": "0.5.97",
+      "channel": "stable",
+      "mandatory": false,
+      "minPremiere": "25.6.0",
+      "maxPremiere": "26.99.99",
+      "summary": "0.5.97: สัตว์เลี้ยงและธีมกาชาใช้บนเว็บหลัก เพิ่มเพื่อน 24 แบบ พร้อมไต่จอและเกาะแผงงาน",
+      "notes": [
+        "ตู้สุ่มและห้องแต่งตัวอยู่ในเว็บหลักพอร์ตเดียวกัน ใช้แต้มและคลังเดิม",
+        "สัตว์เลี้ยงรวม 36 ตัว ของสะสม 100 ชิ้น พร้อมกระโดดเกาะแผงงาน ไต่จอ และทักทายกลางจอ",
+        "พักเอฟเฟกต์ระหว่าง Render ซ่อนแท็บ หรือเปิดลดการเคลื่อนไหว มีปุ่มพักและถอดระบบ",
+        "รวมแก้ In/Out export และเลือก Render ชุดถัดไปจาก Dev .96; จบงานและปิด Premiere ก่อนอัปเดต"
+      ],
+      "installPackage": {
+        "filename": "PromoMenupageAutomation_CloudInstall_0.5.97.zip",
+        "sha256": "145C06EB883A9349792EA791909E301A39788077F07876AA548B3974A8BE90E8",
+        "size": 143941894,
+        "url": "https://github.com/boyfk8/promo-menupage-releases/releases/download/v0.5.97/PromoMenupageAutomation_CloudInstall_0.5.97.zip"
+      },
+      "updatePackage": {
+        "filename": "PromoMenupageAutomation_Update_0.5.97.zip",
+        "sha256": "0973F26A010594DA85B3F75BD78C13CE7BD8A024247C5E3CD4B38560B06701F1",
+        "size": 117355804,
+        "url": "https://github.com/boyfk8/promo-menupage-releases/releases/download/v0.5.97/PromoMenupageAutomation_Update_0.5.97.zip"
+      },
+      "recoveryPackage": {
+        "filename": "PromoMenupageAutomation_OneClickRecovery_0.5.97.zip",
+        "sha256": "286764025DB640F82EBBA186D992B6FEF4F5BEF9B09626E8C262FF412564BDC0",
+        "size": 117460508,
+        "url": "https://github.com/boyfk8/promo-menupage-releases/releases/download/v0.5.97/PromoMenupageAutomation_OneClickRecovery_0.5.97.zip"
+      },
+      "ccx": {
+        "filename": "com.amarintv.promo.menupagebuilder_0.5.97.ccx",
+        "sha256": "B7D81E63C294A27FE0C302B8B078FE41A2DF8F80E44FAFF2D30FC83B297E1536",
+        "size": 97002,
+        "url": "https://github.com/boyfk8/promo-menupage-releases/releases/download/v0.5.97/com.amarintv.promo.menupagebuilder_0.5.97.ccx"
+      },
+      "installPage": "https://github.com/boyfk8/promo-menupage-releases/releases/tag/v0.5.97"
+    },
     {
       "version": "0.5.95",
       "channel": "stable",
