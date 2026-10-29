@@ -3,9 +3,48 @@
   "product": "Promo Menupage Automation",
   "pluginId": "com.amarintv.promo.menupagebuilder",
   "channel": "stable",
-  "latest": "0.5.98",
-  "generatedAt": "2026-10-29T00:58:42.386192+00:00",
+  "latest": "0.5.99",
+  "generatedAt": "2026-10-29T04:00:02.982663+00:00",
   "releases": [
+    {
+      "version": "0.5.99",
+      "channel": "stable",
+      "mandatory": false,
+      "minPremiere": "25.6.0",
+      "maxPremiere": "26.99.99",
+      "summary": "0.5.99: แก้ Cloud Update SSL certificate verify failed บน Windows โดยยังตรวจ HTTPS และ SHA-256",
+      "notes": [
+        "ถ้า Python ตรวจ Certificate Chain ไม่ผ่าน จะลอง Windows TLS และ System Proxy แทน",
+        "ไม่ปิดการตรวจ SSL และยังตรวจ SHA-256 ทุกแพ็กเกจ",
+        "เครื่องที่ตัว Update เดิมเข้า Cloud ไม่ได้ ใช้ OneClickRecovery ทางการเพียงครั้งเดียว",
+        "ไม่เปลี่ยนโค้ด Render/Premiere/Google Sync; ปิด Premiere และจบ Render ก่อนอัปเดต"
+      ],
+      "installPackage": {
+        "filename": "PromoMenupageAutomation_CloudInstall_0.5.99.zip",
+        "sha256": "03923DE8B3D06D685B65166D206B68AFDFA7EA4029273CB05D68BD38E79CE0DA",
+        "size": 147426205,
+        "url": "https://github.com/boyfk8/promo-menupage-releases/releases/download/v0.5.99/PromoMenupageAutomation_CloudInstall_0.5.99.zip"
+      },
+      "updatePackage": {
+        "filename": "PromoMenupageAutomation_Update_0.5.99.zip",
+        "sha256": "0AC25B170058B99A9ADEE97DEB2E100C1C785B9DE1BE356805F778DCEFB26D11",
+        "size": 120840561,
+        "url": "https://github.com/boyfk8/promo-menupage-releases/releases/download/v0.5.99/PromoMenupageAutomation_Update_0.5.99.zip"
+      },
+      "recoveryPackage": {
+        "filename": "PromoMenupageAutomation_OneClickRecovery_0.5.99.zip",
+        "sha256": "72C160B33EE86F3BFCFB2648B6F284CE40DD3FD42B21340EA7871189062345C0",
+        "size": 120945262,
+        "url": "https://github.com/boyfk8/promo-menupage-releases/releases/download/v0.5.99/PromoMenupageAutomation_OneClickRecovery_0.5.99.zip"
+      },
+      "ccx": {
+        "filename": "com.amarintv.promo.menupagebuilder_0.5.99.ccx",
+        "sha256": "87AC5F33CE758A008B63DA2FB6BA580DE1F219E5D5477928D759C5AA8A677AF6",
+        "size": 96918,
+        "url": "https://github.com/boyfk8/promo-menupage-releases/releases/download/v0.5.99/com.amarintv.promo.menupagebuilder_0.5.99.ccx"
+      },
+      "installPage": "https://github.com/boyfk8/promo-menupage-releases/releases/tag/v0.5.99"
+    },
     {
       "version": "0.5.98",
       "channel": "stable",
