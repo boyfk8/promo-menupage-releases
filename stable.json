@@ -3,9 +3,50 @@
   "product": "Promo Menupage Automation",
   "pluginId": "com.amarintv.promo.menupagebuilder",
   "channel": "stable",
-  "latest": "0.5.100",
-  "generatedAt": "2026-10-29T04:57:46.401410+00:00",
+  "latest": "0.5.101",
+  "generatedAt": "2026-10-30T14:52:46.971889+00:00",
   "releases": [
+    {
+      "version": "0.5.101",
+      "channel": "stable",
+      "mandatory": false,
+      "minPremiere": "25.6.0",
+      "maxPremiere": "26.99.99",
+      "summary": "0.5.101: ตั้งเวลากราฟิกและ Text รายเพจ พร้อม Auto Video Preview",
+      "notes": [
+        "สวิตช์ตั้งเวลาใน Page List ของ Manual/Auto เริ่มปิดและใช้0วิ เปิดครั้งแรกตั้งให้7วิ",
+        "คงสปีดกราฟิกเข้า–ออกเดิม โดยตัดเฉพาะช่วงค้างกลาง; ถ้าเวลาไม่พอจะแสดง REVIEW",
+        "Auto มี Video Preview พร้อมเสียง เลื่อนเวลา และปรับระดับเสียงได้",
+        "Text ใน Video Preview เปิด–ปิดตาม alpha กราฟิกทีละเฟรมที่25fps",
+        "คลิปปกติ15วิ ใช้14วิเฉพาะผังระบุ14 sec; เก็บค่ารายเพจและการเชื่อมต่อ Doc เดิม",
+        "Windows เท่านั้น: เครื่องใหม่ใช้ CloudInstall; เครื่องเดิมจบงานและปิด Premiere ก่อน Update"
+      ],
+      "installPackage": {
+        "filename": "PromoMenupageAutomation_CloudInstall_0.5.101.zip",
+        "sha256": "42B298726C260BF905F5024F6BF525ACF194A0B247DB439B340AC2343D42FABD",
+        "size": 147449578,
+        "url": "https://github.com/boyfk8/promo-menupage-releases/releases/download/v0.5.101/PromoMenupageAutomation_CloudInstall_0.5.101.zip"
+      },
+      "updatePackage": {
+        "filename": "PromoMenupageAutomation_Update_0.5.101.zip",
+        "sha256": "F97ADC769749636D68A573AFF907A309E9775EA6E3FA6F19EEDC2A353E739913",
+        "size": 120864700,
+        "url": "https://github.com/boyfk8/promo-menupage-releases/releases/download/v0.5.101/PromoMenupageAutomation_Update_0.5.101.zip"
+      },
+      "recoveryPackage": {
+        "filename": "PromoMenupageAutomation_OneClickRecovery_0.5.101.zip",
+        "sha256": "6E17FAB12EE7061DB9FFCBD7435379B3F05298582B66B55A01AB4DB86453CDFB",
+        "size": 120970060,
+        "url": "https://github.com/boyfk8/promo-menupage-releases/releases/download/v0.5.101/PromoMenupageAutomation_OneClickRecovery_0.5.101.zip"
+      },
+      "ccx": {
+        "filename": "com.amarintv.promo.menupagebuilder_0.5.101.ccx",
+        "sha256": "E4D730B6D8490224C9A78FA10B4BDD8FF9E30153D9F3999E12E25366CAFCDE83",
+        "size": 97422,
+        "url": "https://github.com/boyfk8/promo-menupage-releases/releases/download/v0.5.101/com.amarintv.promo.menupagebuilder_0.5.101.ccx"
+      },
+      "installPage": "https://github.com/boyfk8/promo-menupage-releases/releases/tag/v0.5.101"
+    },
     {
       "version": "0.5.100",
       "channel": "stable",
