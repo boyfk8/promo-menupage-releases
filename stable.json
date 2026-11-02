@@ -3,9 +3,50 @@
   "product": "Promo Menupage Automation",
   "pluginId": "com.amarintv.promo.menupagebuilder",
   "channel": "stable",
-  "latest": "0.5.103",
-  "generatedAt": "2026-11-02T10:08:53.545316+00:00",
+  "latest": "0.5.104",
+  "generatedAt": "2026-11-02T10:48:44.553419+00:00",
   "releases": [
+    {
+      "version": "0.5.104",
+      "channel": "stable",
+      "mandatory": false,
+      "minPremiere": "25.6.0",
+      "maxPremiere": "26.99.99",
+      "summary": "0.5.104: ซ่อม Native Text Patch/Animation และ Update ติดพอร์ต 8877 PID 0",
+      "notes": [
+        "แก้ Native Stage หยุดที่ Text Patch เมื่อผู้ใช้ตั้งเริ่มกราฟิก 7–9 วินาที โดยรักษา Keyframe ตอนจบและไม่เปลี่ยน PR/MXF เดิม",
+        "Update ตรวจ PID 0 ด้วย netstat LISTENING + app.py ที่ติดตั้ง + Backend Health + เวอร์ชัน ก่อนหยุด Backend ที่ยืนยันได้",
+        "เครื่องที่มี Auto Stage failed terminal จะใช้ Recovery เดิมพร้อมสำรองข้อมูล ไม่ลบงาน Page ที่ผ่าน",
+        "ถ้าพอร์ตเป็นโปรเซสอื่นหรือมี Premiere/Render กำลังทำงาน ยังหยุดอย่างปลอดภัยและเก็บ Log",
+        "ยังมี System Tray, LINE และระบบส่ง Error กลางของ 0.5.103 เหมือนเดิม",
+        "Dev ทดสอบ Text Patch 2 Page เวลา 7/9 วินาทีผ่าน แต่ต้องตรวจการ Render/ภาพ/MXF บนเครื่องผู้ใช้จริง"
+      ],
+      "installPackage": {
+        "filename": "PromoMenupageAutomation_CloudInstall_0.5.104.zip",
+        "size": 147464929,
+        "sha256": "A106BADE760882E8AB81C3917B6DAE9EA9585AACC8D12962B95E2BD92CFB50D9",
+        "url": "https://github.com/boyfk8/promo-menupage-releases/releases/download/v0.5.104/PromoMenupageAutomation_CloudInstall_0.5.104.zip"
+      },
+      "updatePackage": {
+        "filename": "PromoMenupageAutomation_Update_0.5.104.zip",
+        "size": 120881198,
+        "sha256": "AC1FD573556DEB5238B694D1B7340B1468C1500E13A62008255F478F20040E43",
+        "url": "https://github.com/boyfk8/promo-menupage-releases/releases/download/v0.5.104/PromoMenupageAutomation_Update_0.5.104.zip"
+      },
+      "recoveryPackage": {
+        "filename": "PromoMenupageAutomation_OneClickRecovery_0.5.104.zip",
+        "size": 120987641,
+        "sha256": "298007C3EF7F44CE47F4DBB0D2777D20B134363EAC03FC96636C041C04D54240",
+        "url": "https://github.com/boyfk8/promo-menupage-releases/releases/download/v0.5.104/PromoMenupageAutomation_OneClickRecovery_0.5.104.zip"
+      },
+      "ccx": {
+        "filename": "com.amarintv.promo.menupagebuilder_0.5.104.ccx",
+        "size": 97592,
+        "sha256": "DD36B013245A37BED1963FCB5B87B7D416FB24AA9EE8A22CC2621390B0E2FE1A",
+        "url": "https://github.com/boyfk8/promo-menupage-releases/releases/download/v0.5.104/com.amarintv.promo.menupagebuilder_0.5.104.ccx"
+      },
+      "installPage": "https://github.com/boyfk8/promo-menupage-releases/releases/tag/v0.5.104"
+    },
     {
       "version": "0.5.103",
       "channel": "stable",
