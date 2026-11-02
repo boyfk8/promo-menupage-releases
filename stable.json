@@ -3,9 +3,51 @@
   "product": "Promo Menupage Automation",
   "pluginId": "com.amarintv.promo.menupagebuilder",
   "channel": "stable",
-  "latest": "0.5.105",
-  "generatedAt": "2026-11-02T11:19:45.435535+00:00",
+  "latest": "0.5.106",
+  "generatedAt": "2026-11-02T13:34:06.266218+00:00",
   "releases": [
+    {
+      "version": "0.5.106",
+      "channel": "stable",
+      "mandatory": false,
+      "minPremiere": "25.6.0",
+      "maxPremiere": "26.99.99",
+      "summary": "0.5.106: แก้ Native Render สำเร็จบน Dev + ปิด Premiere จริง + Cleanup PR ชั่วคราว",
+      "notes": [
+        "แก้ Native Text 15.04/14.04 วินาทีที่ Premiere เพิ่มอีก 1 เฟรม และยังคง Output Sequence 15/14 วินาที 25fps",
+        "Dev Render จริง MON:02 และ MON:05 ผ่าน 2/2 พร้อม Technical QC",
+        "ทดสอบ Dev MON:05 อีก Run โดยตั้งปิด Premiere และลบ PR: Render ผ่าน, Premiere process ปิดจริง, ลบสำเนา PR ใน Run ครบ 3 ไฟล์",
+        "ลบเฉพาะไฟล์ PR ที่เป็นของ Run หลัง Complete/QC, Native UXP ACK และ Windows ยืนยัน Premiere ปิดแล้ว โดยคง MXF, Preview, Golden และ Log",
+        "แก้การตรวจ Heartbeat ปิด Premiere ที่อาจค้างเป็นชื่อโปรเจ็กต์เก่าระหว่าง Save/Close พร้อมบันทึก Close Receipt",
+        "กู้ Run เดิมที่ Premiere บันทึก PR ซ้ำได้หลังตรวจเทียบ Keyframe และ Text; Run ที่ยังมีงานค้างไม่ถูกลบทิ้ง",
+        "ทดสอบ 151 Python tests + UXP 14 กรณีผ่าน; เครื่องทีมงานยังต้องทดสอบจริงหลังอัปเดต"
+      ],
+      "installPackage": {
+        "filename": "PromoMenupageAutomation_CloudInstall_0.5.106.zip",
+        "size": 147476857,
+        "sha256": "E61B867E66FDFC17D47219030526D4EA290CA55BE16257921F712459B62750CB",
+        "url": "https://github.com/boyfk8/promo-menupage-releases/releases/download/v0.5.106/PromoMenupageAutomation_CloudInstall_0.5.106.zip"
+      },
+      "updatePackage": {
+        "filename": "PromoMenupageAutomation_Update_0.5.106.zip",
+        "size": 120893700,
+        "sha256": "C52F5DB4A3E970177765D4F81FB1CD3F19031E6FDF6EAA54183F0E56304CAC2F",
+        "url": "https://github.com/boyfk8/promo-menupage-releases/releases/download/v0.5.106/PromoMenupageAutomation_Update_0.5.106.zip"
+      },
+      "recoveryPackage": {
+        "filename": "PromoMenupageAutomation_OneClickRecovery_0.5.106.zip",
+        "size": 121000669,
+        "sha256": "4215A8DFCCC7AE16C54833D5C528BCA3525F16F44791EAB4E34BE1623F960616",
+        "url": "https://github.com/boyfk8/promo-menupage-releases/releases/download/v0.5.106/PromoMenupageAutomation_OneClickRecovery_0.5.106.zip"
+      },
+      "ccx": {
+        "filename": "com.amarintv.promo.menupagebuilder_0.5.106.ccx",
+        "size": 98514,
+        "sha256": "C9EC0962A969A558648062F0E4F9C0D258801B6880118E200B453BB415358EE4",
+        "url": "https://github.com/boyfk8/promo-menupage-releases/releases/download/v0.5.106/com.amarintv.promo.menupagebuilder_0.5.106.ccx"
+      },
+      "installPage": "https://github.com/boyfk8/promo-menupage-releases/releases/tag/v0.5.106"
+    },
     {
       "version": "0.5.105",
       "channel": "stable",
