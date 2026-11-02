@@ -3,9 +3,50 @@
   "product": "Promo Menupage Automation",
   "pluginId": "com.amarintv.promo.menupagebuilder",
   "channel": "stable",
-  "latest": "0.5.102",
-  "generatedAt": "2026-11-02T08:41:29.196972+00:00",
+  "latest": "0.5.103",
+  "generatedAt": "2026-11-02T10:08:53.545316+00:00",
   "releases": [
+    {
+      "version": "0.5.103",
+      "channel": "stable",
+      "mandatory": false,
+      "minPremiere": "25.6.0",
+      "maxPremiere": "26.99.99",
+      "summary": "0.5.103: ย้าย Logs ส่วนกลาง และรายงานข้อผิดพลาด Render/LINE/Google/UXP อัตโนมัติ",
+      "notes": [
+        "Logs ทุกเครื่องที่อัปเดตแล้วส่งไปโฟลเดอร์ MENUPAGE กลางใหม่ด้วย UNC โดยไม่พึ่งแมปไดรฟ์ Z:",
+        "Native Stage/Render failed รายงาน Run ID, Error, จำนวน Page สำเร็จ และ QC โดยไม่ส่งไฟล์งาน",
+        "HTTP API, Google/LINE, Frontend และ Premiere UXP ส่ง Error เข้าระบบรายงานเดียวกัน",
+        "ถ้าส่ง Log ไม่สำเร็จ เก็บในเครื่องและส่งซ้ำเมื่อเชื่อมต่อได้ โดยไม่บล็อก Render",
+        "ไม่ส่ง Token/Team Binding หรือไฟล์ PR/MXF; ระบบ Tray และ LINE 0.5.102 ยังอยู่",
+        "ตรวจบน Dev ผ่าน แต่ต้องทดสอบ Render/MXF และเครือข่ายแต่ละเครื่องหลังอัปเดต"
+      ],
+      "installPackage": {
+        "filename": "PromoMenupageAutomation_CloudInstall_0.5.103.zip",
+        "size": 147462599,
+        "sha256": "0AF105838113438493F7E243BBA2648F99C13369A834141D9A1301FADCE0D40A",
+        "url": "https://github.com/boyfk8/promo-menupage-releases/releases/download/v0.5.103/PromoMenupageAutomation_CloudInstall_0.5.103.zip"
+      },
+      "updatePackage": {
+        "filename": "PromoMenupageAutomation_Update_0.5.103.zip",
+        "size": 120877854,
+        "sha256": "D1283FCD8FDFFB7E743E3BEEF72680A14CD316F0B402645C3D6CDC69A070CE02",
+        "url": "https://github.com/boyfk8/promo-menupage-releases/releases/download/v0.5.103/PromoMenupageAutomation_Update_0.5.103.zip"
+      },
+      "recoveryPackage": {
+        "filename": "PromoMenupageAutomation_OneClickRecovery_0.5.103.zip",
+        "size": 120983281,
+        "sha256": "8AF8A8AED77CAE2AB754238294ABA52BF869FEF6A3CE35DB343AE628D0583EF7",
+        "url": "https://github.com/boyfk8/promo-menupage-releases/releases/download/v0.5.103/PromoMenupageAutomation_OneClickRecovery_0.5.103.zip"
+      },
+      "ccx": {
+        "filename": "com.amarintv.promo.menupagebuilder_0.5.103.ccx",
+        "size": 97592,
+        "sha256": "D5ADEDD22DE0FCDC8100946FE60C2E495985E9F75DB7D8B2B7C92EDCFFA86A30",
+        "url": "https://github.com/boyfk8/promo-menupage-releases/releases/download/v0.5.103/com.amarintv.promo.menupagebuilder_0.5.103.ccx"
+      },
+      "installPage": "https://github.com/boyfk8/promo-menupage-releases/releases/tag/v0.5.103"
+    },
     {
       "version": "0.5.102",
       "channel": "stable",
