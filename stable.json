@@ -3,9 +3,51 @@
   "product": "Promo Menupage Automation",
   "pluginId": "com.amarintv.promo.menupagebuilder",
   "channel": "stable",
-  "latest": "0.5.106",
-  "generatedAt": "2026-11-02T13:34:06.266218+00:00",
+  "latest": "0.5.107",
+  "generatedAt": "2026-11-02T14:25:35.947065+00:00",
   "releases": [
+    {
+      "version": "0.5.107",
+      "channel": "stable",
+      "mandatory": false,
+      "minPremiere": "25.6.0",
+      "maxPremiere": "26.99.99",
+      "summary": "0.5.107: ซ่อม UXP ไม่ตรงแพ็กเกจ, Auto Stage ค้าง, Cleanup และ Cloud Update",
+      "notes": [
+        "แก้การค้าง Auto Stage active หลังจบ Render/QC และ Premiere ปิดจริง พร้อมเก็บ Receipt ต้นฉบับก่อนปล่อยสิทธิ์",
+        "แก้ Cleanup เมื่อ Path Z: และ UNC ชี้ไฟล์ MXF ตัวเดียวกัน โดยตรวจสิทธิ์และ SHA-256 จริงก่อนลบ PR ชั่วคราว",
+        "หลังรีสตาร์ต Backend ระบบตรวจ Run ที่จบแล้วและต่อขั้นตอน Stage release + Cleanup ที่ค้างโดยไม่สั่ง Render ซ้ำ",
+        "Adobe UXP บน Dev ติดตั้งและตรวจเทียบไฟล์จริงครบเป็น 0.5.107 พร้อมตรวจว่า App/UXP เวอร์ชันตรงกัน",
+        "Cloud Update ตรวจหาเวอร์ชันใหม่ได้แม้การตรวจ Adobe UXP เสีย โดยขั้นตอนติดตั้งยังตรวจ Process/Backup/Version จริงก่อนลง",
+        "แยก Log เช็กสถานะอัตโนมัติออกจากคำสั่งกด Update และลดรายงานเดิมซ้ำเป็น 1 ครั้งต่อวันต่อข้อผิดพลาด",
+        "Render Native MXF/QC/Premiere Close ผ่านจริงบน Dev 0.5.106 ก่อนเพิ่มแพตช์นี้ เครื่อง 22004 และ 22018 ยังต้องตรวจหลังอัปเดต 0.5.107"
+      ],
+      "installPackage": {
+        "filename": "PromoMenupageAutomation_CloudInstall_0.5.107.zip",
+        "size": 147481936,
+        "sha256": "D032611D8A74BD50D2C124410DE04CBB7C680F122831713210CB4940B786A2B4",
+        "url": "https://github.com/boyfk8/promo-menupage-releases/releases/download/v0.5.107/PromoMenupageAutomation_CloudInstall_0.5.107.zip"
+      },
+      "updatePackage": {
+        "filename": "PromoMenupageAutomation_Update_0.5.107.zip",
+        "size": 120898795,
+        "sha256": "444FF326C200EC44BE058955438F1807879CAEE5B68D4B08C6622D2328FF7E84",
+        "url": "https://github.com/boyfk8/promo-menupage-releases/releases/download/v0.5.107/PromoMenupageAutomation_Update_0.5.107.zip"
+      },
+      "recoveryPackage": {
+        "filename": "PromoMenupageAutomation_OneClickRecovery_0.5.107.zip",
+        "size": 121005766,
+        "sha256": "E6F053F96EC1DBADF6695D7B9E4263E5B54AAC2B0336A75A2E7395C7C642C6BB",
+        "url": "https://github.com/boyfk8/promo-menupage-releases/releases/download/v0.5.107/PromoMenupageAutomation_OneClickRecovery_0.5.107.zip"
+      },
+      "ccx": {
+        "filename": "com.amarintv.promo.menupagebuilder_0.5.107.ccx",
+        "size": 98513,
+        "sha256": "A874753234BBA5BE187B0191945120B9729F40B34D8DA95D157AE3FB1CAA2208",
+        "url": "https://github.com/boyfk8/promo-menupage-releases/releases/download/v0.5.107/com.amarintv.promo.menupagebuilder_0.5.107.ccx"
+      },
+      "installPage": "https://github.com/boyfk8/promo-menupage-releases/releases/tag/v0.5.107"
+    },
     {
       "version": "0.5.106",
       "channel": "stable",
