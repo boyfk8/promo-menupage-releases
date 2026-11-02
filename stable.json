@@ -3,9 +3,50 @@
   "product": "Promo Menupage Automation",
   "pluginId": "com.amarintv.promo.menupagebuilder",
   "channel": "stable",
-  "latest": "0.5.104",
-  "generatedAt": "2026-11-02T10:48:44.553419+00:00",
+  "latest": "0.5.105",
+  "generatedAt": "2026-11-02T11:19:45.435535+00:00",
   "releases": [
+    {
+      "version": "0.5.105",
+      "channel": "stable",
+      "mandatory": false,
+      "minPremiere": "25.6.0",
+      "maxPremiere": "26.99.99",
+      "summary": "0.5.105: แก้ UXP Native Timing Readback, ปิด Tray ได้ และซ่อม Update PID 0",
+      "notes": [
+        "แก้ MON:05 หยุดที่ overlay native timing readback mismatch โดยให้ UXP รับคลิป Animation 0 วินาทีเฉพาะที่ Backend พิสูจน์ Keyframe ของ Run จริงแล้ว",
+        "Page ที่ Render ผ่านแล้ว เช่น MON:02 จะไม่ถูกสั่ง Render ซ้ำเมื่อกู้ Run เดิมด้วยเงื่อนไขเดิม",
+        "Exit Tray ปิดไอคอนได้เสมอ ไม่ต้องรอ Stop Backend; Stop/Restart ยังคงตรวจ Process และ Render อย่างปลอดภัย",
+        "ปรับตัวอัปเดต PID 0 แม้ netstat ซ่อน PID โดยต้องยืนยัน Backend app.py + Health/Version/Root จริง",
+        "ระบบเก็บ Logs กลาง LINE และ Google ยังอยู่ ไม่มี Token/ไฟล์ PR/MXF ในอัปเดตสาธารณะ",
+        "ผ่าน 100 Python tests และ UXP mock 10 กรณี แต่ยังต้องทดสอบ Render/MXF และ Tray บนเครื่องทีมงานจริง"
+      ],
+      "installPackage": {
+        "filename": "PromoMenupageAutomation_CloudInstall_0.5.105.zip",
+        "size": 147468826,
+        "sha256": "070EF2CAA260E7830E03BAB2245411DF3C25CD01178FD11E62D6DC6519729044",
+        "url": "https://github.com/boyfk8/promo-menupage-releases/releases/download/v0.5.105/PromoMenupageAutomation_CloudInstall_0.5.105.zip"
+      },
+      "updatePackage": {
+        "filename": "PromoMenupageAutomation_Update_0.5.105.zip",
+        "size": 120885633,
+        "sha256": "47C8F81D7FCF8213FF20C28FF4FE0B58CF6B1950667B4171055385240581A783",
+        "url": "https://github.com/boyfk8/promo-menupage-releases/releases/download/v0.5.105/PromoMenupageAutomation_Update_0.5.105.zip"
+      },
+      "recoveryPackage": {
+        "filename": "PromoMenupageAutomation_OneClickRecovery_0.5.105.zip",
+        "size": 120992601,
+        "sha256": "36D815C6B83A16F2760D7E514469A3397774542CF902152F8A22D35E2987BE3E",
+        "url": "https://github.com/boyfk8/promo-menupage-releases/releases/download/v0.5.105/PromoMenupageAutomation_OneClickRecovery_0.5.105.zip"
+      },
+      "ccx": {
+        "filename": "com.amarintv.promo.menupagebuilder_0.5.105.ccx",
+        "size": 98263,
+        "sha256": "5E08DCE5DA310B9DFCCA538E257CBCB25D5972C092608C4BA6398763AD738A0A",
+        "url": "https://github.com/boyfk8/promo-menupage-releases/releases/download/v0.5.105/com.amarintv.promo.menupagebuilder_0.5.105.ccx"
+      },
+      "installPage": "https://github.com/boyfk8/promo-menupage-releases/releases/tag/v0.5.105"
+    },
     {
       "version": "0.5.104",
       "channel": "stable",
