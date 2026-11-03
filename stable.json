@@ -3,9 +3,49 @@
   "product": "Promo Menupage Automation",
   "pluginId": "com.amarintv.promo.menupagebuilder",
   "channel": "stable",
-  "latest": "0.5.111",
-  "generatedAt": "2026-11-03T05:44:20.761550+00:00",
+  "latest": "0.5.112",
+  "generatedAt": "2026-11-03T06:32:48.084470+00:00",
   "releases": [
+    {
+      "version": "0.5.112",
+      "channel": "stable",
+      "mandatory": false,
+      "minPremiere": "25.6.0",
+      "maxPremiere": "26.99.99",
+      "summary": "0.5.112: Fix Auto/LINE false gate on verified per-machine five-digit ports",
+      "notes": [
+        "Production Auto inspection accepts the persisted, backend-attested localhost port instead of hardcoded 8877.",
+        "Browser origin and port must match Backend; wrong/foreign/unverified listeners remain blocked.",
+        "Profile isolation, QA ownership, dry-run preview, LINE-off Auto gate and native Render QC remain enforced.",
+        "Improved Auto error messages identify port-binding mismatches instead of incorrectly blaming LINE.",
+        "22004 reported blocked Auto inspection on v0.5.111; v0.5.112 client Render requires post-install proof."
+      ],
+      "installPackage": {
+        "filename": "PromoMenupageAutomation_CloudInstall_0.5.112.zip",
+        "size": 147500818,
+        "sha256": "1B55E84ECA74C02FA7436EE6D5A8F049DEBF2F1918EB1606297BF8212E4874CF",
+        "url": "https://github.com/boyfk8/promo-menupage-releases/releases/download/v0.5.112/PromoMenupageAutomation_CloudInstall_0.5.112.zip"
+      },
+      "updatePackage": {
+        "filename": "PromoMenupageAutomation_Update_0.5.112.zip",
+        "size": 120922838,
+        "sha256": "FE2968460A17C04E762FC1027013172C6C7CFF733ABC155FC921715C01197084",
+        "url": "https://github.com/boyfk8/promo-menupage-releases/releases/download/v0.5.112/PromoMenupageAutomation_Update_0.5.112.zip"
+      },
+      "recoveryPackage": {
+        "filename": "PromoMenupageAutomation_OneClickRecovery_0.5.112.zip",
+        "size": 121034914,
+        "sha256": "9F1291F1B099E3C0251E9BC83C3B437A671037E84222DC6354D84C6FA0FBC1DB",
+        "url": "https://github.com/boyfk8/promo-menupage-releases/releases/download/v0.5.112/PromoMenupageAutomation_OneClickRecovery_0.5.112.zip"
+      },
+      "ccx": {
+        "filename": "com.amarintv.promo.menupagebuilder_0.5.112.ccx",
+        "size": 100344,
+        "sha256": "A7FCD077FA7438962219264F1B438C9606ED983B402CD0767367B82D229F7AC0",
+        "url": "https://github.com/boyfk8/promo-menupage-releases/releases/download/v0.5.112/com.amarintv.promo.menupagebuilder_0.5.112.ccx"
+      },
+      "installPage": "https://github.com/boyfk8/promo-menupage-releases/releases/tag/v0.5.112"
+    },
     {
       "version": "0.5.111",
       "channel": "stable",
