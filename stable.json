@@ -3,9 +3,52 @@
   "product": "Promo Menupage Automation",
   "pluginId": "com.amarintv.promo.menupagebuilder",
   "channel": "stable",
-  "latest": "0.5.107",
-  "generatedAt": "2026-11-02T14:25:35.947065+00:00",
+  "latest": "0.5.108",
+  "generatedAt": "2026-11-03T03:47:27.168713+00:00",
   "releases": [
+    {
+      "version": "0.5.108",
+      "channel": "stable",
+      "mandatory": false,
+      "minPremiere": "25.6.0",
+      "maxPremiere": "26.99.99",
+      "summary": "0.5.108: เลือกพอร์ตสำรองอัตโนมัติรายเครื่อง แก้ 8877 ชน และ Cloud Update ค้าง",
+      "notes": [
+        "ถ้า 8877 ใช้งานได้ ระบบจะคงค่าเดิม หากถูกโปรแกรมอื่นใช้ จะเลือกพอร์ตว่างเฉพาะเครื่องและจดจำค่าไว้",
+        "พอร์ตสำรองที่อนุญาต 8879–8896 และ 8900–8911; สงวน 8878, 8897, 8898 ไว้สำหรับระบบทดสอบและ Studio",
+        "Shortcut, Tray, UXP, Backend และ Cloud Update/Recovery ใช้พอร์ตของเครื่องเดียวกัน ไม่ต้องตั้งค่าทุกครั้ง",
+        "ตัวติดตั้งไม่ปิดโปรแกรมอื่นที่ใช้พอร์ต และไม่เปลี่ยนพอร์ตเมื่อ Render หรือ Premiere ยังทำงาน",
+        "UXP ตรวจ Plugin ID/Version/Root และปฏิเสธ Backend ปลอมหรือระบบที่เปิดซ้อน; ฝั่ง Dev ไม่แย่ง Production",
+        "หน้าเว็บไม่หมุนรอ Backend ตลอดไปเมื่ออัปเดตขัดข้อง และเก็บรายงานติดตั้งไว้ตรวจสอบ",
+        "Dev v0.5.108 ติดตั้ง Backend/UXP ตรงกันและชุดทดสอบพอร์ตสำรองผ่านแล้ว; 22004 ยังต้องตรวจรับหลังติดตั้งจริง",
+        "เครื่อง 22018 ยืนยันว่า OneClickRecovery เดิมใช้งานได้ และ Render ตัวเริ่ม 7 วินาทีผ่านแล้ว"
+      ],
+      "installPackage": {
+        "filename": "PromoMenupageAutomation_CloudInstall_0.5.108.zip",
+        "size": 147489075,
+        "sha256": "FCFDD68EE7ABFDD670195B4F744035217ED18BBC341874FC71F69C3C9CD4F9A5",
+        "url": "https://github.com/boyfk8/promo-menupage-releases/releases/download/v0.5.108/PromoMenupageAutomation_CloudInstall_0.5.108.zip"
+      },
+      "updatePackage": {
+        "filename": "PromoMenupageAutomation_Update_0.5.108.zip",
+        "size": 120909431,
+        "sha256": "41A8767D3589CBD67D1323E5831062E5737012EC980095216BC98834D654893C",
+        "url": "https://github.com/boyfk8/promo-menupage-releases/releases/download/v0.5.108/PromoMenupageAutomation_Update_0.5.108.zip"
+      },
+      "recoveryPackage": {
+        "filename": "PromoMenupageAutomation_OneClickRecovery_0.5.108.zip",
+        "size": 121019879,
+        "sha256": "51C2BC8A2D9DA4850F67320CD583E6D25013430D3355C234E4F07B7690502B7A",
+        "url": "https://github.com/boyfk8/promo-menupage-releases/releases/download/v0.5.108/PromoMenupageAutomation_OneClickRecovery_0.5.108.zip"
+      },
+      "ccx": {
+        "filename": "com.amarintv.promo.menupagebuilder_0.5.108.ccx",
+        "size": 99694,
+        "sha256": "C8DCBEBCB7AD4AA7BE4EBE637E7891E0FEF1A68E88D0C05EF87F076F389A3CEF",
+        "url": "https://github.com/boyfk8/promo-menupage-releases/releases/download/v0.5.108/com.amarintv.promo.menupagebuilder_0.5.108.ccx"
+      },
+      "installPage": "https://github.com/boyfk8/promo-menupage-releases/releases/tag/v0.5.108"
+    },
     {
       "version": "0.5.107",
       "channel": "stable",
