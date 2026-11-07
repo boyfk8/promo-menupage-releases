@@ -3,9 +3,50 @@
   "product": "Promo Menupage Automation",
   "pluginId": "com.amarintv.promo.menupagebuilder",
   "channel": "stable",
-  "latest": "0.5.114",
-  "generatedAt": "2026-11-05T09:38:57.613798+00:00",
+  "latest": "0.5.116",
+  "generatedAt": "2026-11-07T11:15:44.456804+00:00",
   "releases": [
+    {
+      "version": "0.5.116",
+      "channel": "stable",
+      "mandatory": false,
+      "minPremiere": "25.6.0",
+      "maxPremiere": "26.99.99",
+      "summary": "0.5.116: กฎเวลาเริ่มกราฟิกตามไฟล์โปสเตอร์ใช้กับ NEXT ได้ด้วย",
+      "notes": [
+        "โปสเตอร์ที่ตั้งเริ่มกราฟิก 7 วินาที ใช้กับเพจรายการต่อไป NEXT ได้ด้วยเมื่อ Mapping ยืนยันแล้ว",
+        "ค่าปิดหรือเวลาเฉพาะเพจยังมีสิทธิ์เหนือกฎอัตโนมัติตามเดิม",
+        "NEXT ยังคงรูปแบบรายการเดียวและความยาว 15 วินาที ไม่แก้โปสเตอร์ เพลง หรือไฟล์ต้นฉบับ",
+        "แก้การค้นหา Backend ใน Dev และเลขรุ่นตัวติดตั้งให้ตรงกัน",
+        "ไม่รวมตัวทดสอบ Docs, AI หรือข้อมูลการเชื่อมต่อส่วนตัว",
+        "หลังอัปเดตให้ตรวจ Preview และไฟล์ MXF บนเครื่องใช้งานก่อนส่งออกอากาศ"
+      ],
+      "installPackage": {
+        "filename": "PromoMenupageAutomation_CloudInstall_0.5.116.zip",
+        "size": 147520170,
+        "sha256": "287359D1C49E3B37A0A93674CD4A07E39DD8AFB409ED5074F42D931DCC59E149",
+        "url": "https://github.com/boyfk8/promo-menupage-releases/releases/download/v0.5.116/PromoMenupageAutomation_CloudInstall_0.5.116.zip"
+      },
+      "updatePackage": {
+        "filename": "PromoMenupageAutomation_Update_0.5.116.zip",
+        "size": 120942819,
+        "sha256": "8260330F917ADD0586FA02C5B1ACE2E27D06431F34E5825AFA4924E3EAF93386",
+        "url": "https://github.com/boyfk8/promo-menupage-releases/releases/download/v0.5.116/PromoMenupageAutomation_Update_0.5.116.zip"
+      },
+      "recoveryPackage": {
+        "filename": "PromoMenupageAutomation_OneClickRecovery_0.5.116.zip",
+        "size": 121055442,
+        "sha256": "FEAFCFAF99B7BBA88906777174A2EA2393925EEB1FC8603B925CF4F2771BFE66",
+        "url": "https://github.com/boyfk8/promo-menupage-releases/releases/download/v0.5.116/PromoMenupageAutomation_OneClickRecovery_0.5.116.zip"
+      },
+      "ccx": {
+        "filename": "com.amarintv.promo.menupagebuilder_0.5.116.ccx",
+        "size": 100344,
+        "sha256": "77890672A9B0449AFC18BD6C31FDBC17D62867D9FD5F53707170B3D328AE67FF",
+        "url": "https://github.com/boyfk8/promo-menupage-releases/releases/download/v0.5.116/com.amarintv.promo.menupagebuilder_0.5.116.ccx"
+      },
+      "installPage": "https://github.com/boyfk8/promo-menupage-releases/releases/tag/v0.5.116"
+    },
     {
       "version": "0.5.114",
       "channel": "stable",
