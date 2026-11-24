@@ -3,9 +3,48 @@
   "product": "Promo Menupage Automation",
   "pluginId": "com.amarintv.promo.menupagebuilder",
   "channel": "stable",
-  "latest": "0.5.119",
-  "generatedAt": "2026-11-24T06:56:49.854160+00:00",
+  "latest": "0.5.120",
+  "generatedAt": "2026-11-24T10:03:53.748555+00:00",
   "releases": [
+    {
+      "version": "0.5.120",
+      "channel": "stable",
+      "mandatory": false,
+      "minPremiere": "25.6.0",
+      "maxPremiere": "27.99.99",
+      "summary": "0.5.120: Premiere 27 preset lookup and clear duplicate-Page message",
+      "notes": [
+        "Premiere 27 machines without Media Encoder 2025/2026 can now find the AVC-Intra Class100 1080 50i preset (Stage no longer stops with 'preset not found').",
+        "Machines that already used the Media Encoder 2026/2025 preset keep exactly the same preset.",
+        "Auto Preview names a duplicated day/Page in the Google Doc instead of the generic identity error; it still blocks Stage.",
+        "Prior output and Premiere Golden remain untouched; cloud update still requires idle/native safety gates."
+      ],
+      "installPackage": {
+        "filename": "PromoMenupageAutomation_CloudInstall_0.5.120.zip",
+        "size": 147527120,
+        "sha256": "9518E27C79E7133144CDA82803D9B6F148C166048ED946CCE1743E05E192A678",
+        "url": "https://github.com/boyfk8/promo-menupage-releases/releases/download/v0.5.120/PromoMenupageAutomation_CloudInstall_0.5.120.zip"
+      },
+      "updatePackage": {
+        "filename": "PromoMenupageAutomation_Update_0.5.120.zip",
+        "size": 120949972,
+        "sha256": "3DF5BC16B3556EA27CFCDD928F3DA5D12046973ADD75924C664127A245682522",
+        "url": "https://github.com/boyfk8/promo-menupage-releases/releases/download/v0.5.120/PromoMenupageAutomation_Update_0.5.120.zip"
+      },
+      "recoveryPackage": {
+        "filename": "PromoMenupageAutomation_OneClickRecovery_0.5.120.zip",
+        "size": 121062763,
+        "sha256": "F3FE68B4D1FA1E1C6CB9530347DC48AA3A8B33A9050E030A44C08625E24AC7E4",
+        "url": "https://github.com/boyfk8/promo-menupage-releases/releases/download/v0.5.120/PromoMenupageAutomation_OneClickRecovery_0.5.120.zip"
+      },
+      "ccx": {
+        "filename": "com.amarintv.promo.menupagebuilder_0.5.120.ccx",
+        "size": 100576,
+        "sha256": "2C4B68D512A169ADFE5D6A7FDFCCC4F759E885A23FD77690332AD4D6B52B6F33",
+        "url": "https://github.com/boyfk8/promo-menupage-releases/releases/download/v0.5.120/com.amarintv.promo.menupagebuilder_0.5.120.ccx"
+      },
+      "installPage": "https://github.com/boyfk8/promo-menupage-releases/releases/tag/v0.5.120"
+    },
     {
       "version": "0.5.119",
       "channel": "stable",
