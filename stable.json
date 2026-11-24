@@ -3,9 +3,48 @@
   "product": "Promo Menupage Automation",
   "pluginId": "com.amarintv.promo.menupagebuilder",
   "channel": "stable",
-  "latest": "0.5.118",
-  "generatedAt": "2026-11-20T11:40:22.939105+00:00",
+  "latest": "0.5.119",
+  "generatedAt": "2026-11-24T06:56:49.854160+00:00",
   "releases": [
+    {
+      "version": "0.5.119",
+      "channel": "stable",
+      "mandatory": false,
+      "minPremiere": "25.6.0",
+      "maxPremiere": "27.99.99",
+      "summary": "0.5.119: repaired 0.5.118 update package (correct Adobe CCX)",
+      "notes": [
+        "0.5.118 packages contained the previous Adobe plugin, so updates stopped with 'core/CCX manifest incomplete'.",
+        "Same application code as 0.5.118 with the correct 0.5.119 Adobe plugin; no behaviour change.",
+        "Includes Premiere 27 support and the 0.5.118 Auto Stop / Premiere-exit Render safety hotfix.",
+        "Prior output and Premiere Golden remain untouched; cloud update still requires idle/native safety gates."
+      ],
+      "installPackage": {
+        "filename": "PromoMenupageAutomation_CloudInstall_0.5.119.zip",
+        "size": 147526243,
+        "sha256": "C2A152DE9B6F164E05BB58814A67F7E7D0E13F4FEE4AA2FF593FC4558292AC07",
+        "url": "https://github.com/boyfk8/promo-menupage-releases/releases/download/v0.5.119/PromoMenupageAutomation_CloudInstall_0.5.119.zip"
+      },
+      "updatePackage": {
+        "filename": "PromoMenupageAutomation_Update_0.5.119.zip",
+        "size": 120949095,
+        "sha256": "B650DD1F322F9A0BE22E9236BC022271B301CE1831B5689A939E62C98140113B",
+        "url": "https://github.com/boyfk8/promo-menupage-releases/releases/download/v0.5.119/PromoMenupageAutomation_Update_0.5.119.zip"
+      },
+      "recoveryPackage": {
+        "filename": "PromoMenupageAutomation_OneClickRecovery_0.5.119.zip",
+        "size": 121061889,
+        "sha256": "9B828EB894462DB888CA1F3AE060CB5CFE0E3EDF2EF1350BB49F41FAB97CDDD3",
+        "url": "https://github.com/boyfk8/promo-menupage-releases/releases/download/v0.5.119/PromoMenupageAutomation_OneClickRecovery_0.5.119.zip"
+      },
+      "ccx": {
+        "filename": "com.amarintv.promo.menupagebuilder_0.5.119.ccx",
+        "size": 100575,
+        "sha256": "BAD3537C7B9378990F45943791A6BF383F47B87C3C5C18136893C412675B64C1",
+        "url": "https://github.com/boyfk8/promo-menupage-releases/releases/download/v0.5.119/com.amarintv.promo.menupagebuilder_0.5.119.ccx"
+      },
+      "installPage": "https://github.com/boyfk8/promo-menupage-releases/releases/tag/v0.5.119"
+    },
     {
       "version": "0.5.118",
       "channel": "stable",
